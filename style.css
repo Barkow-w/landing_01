@@ -1,0 +1,346 @@
+/*Global*/
+body {
+    margin: 0;
+    font-family: Raleway, sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 60px;
+    line-height: 72px;
+    color: rgba(4, 9, 29, 1);
+}
+
+h2 {
+    margin: 0;
+    font-size: 48px;
+    line-height: 60px;
+    color: rgba(4, 9, 29, 1);
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(4, 9, 29, 1);
+}
+
+button {
+    padding: 12px 40px;
+    font-size: 18px;
+    line-height: 28px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(248, 127, 82, 1);
+}
+
+.container {
+    margin: 0 auto;
+    padding-top: 148px;
+    width: 1320px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/*Auth*/
+
+.auth {
+    justify-content: space-between;
+    padding: 29px 24px 29px 28px;
+}
+
+.auth-buttons {
+    gap: 20px;
+}
+
+.auth-buttons-registration {
+    width: 266px;
+}
+
+/*Articles*/
+
+.articles-list {
+    flex-direction: column;
+    gap: 48px;
+    margin-top: 56px;
+}
+
+.articles-item {
+    justify-content: space-between;
+    align-items: center;
+    width: 1123px;
+}
+
+.reward {
+    padding-left: 197px;
+}
+
+.transfer {
+    padding-right: 197px;
+}
+
+.statistics {
+    padding-left: 197px;
+}
+
+.articles-item-block {
+    width: 652px;
+}
+
+.articles-block-title {
+    align-items: flex-end;
+    height: 44px;
+    gap: 8px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+span {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+    color: rgba(248, 127, 82, 1);
+}
+
+.articles-block-description {
+    margin-top: 32px;
+    font-weight: 300;
+}
+
+/*Comments*/
+
+.comments-header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comments-slider {
+    gap: 20px;
+}
+
+.comments-btn {
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    border: 1px solid rgba(252, 192, 151, 1);
+    background-color: white;
+}
+
+.comments-list {
+    margin-top: 56px;
+    gap: 16px;
+}
+
+.comments-item {
+    max-width: 652px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgba(241, 242, 245, 1);
+}
+
+.comments-icon {
+    height: 56px;
+    margin-right: 16px;
+}
+
+.comments-avatar {
+    width: 500px;
+}
+
+.comments-avatar-name {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.comments-avatar-text {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.comments-description {
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.comments-date {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+/*Partner*/
+
+.partner {
+    flex-direction: column;
+    align-items: center;
+}
+
+.partner-list {
+    margin-top: 64px;
+    gap: 48px;
+}
+
+.partner-item {
+    display: flex;
+    align-items: center;
+}
+
+.partner-description {
+    font-weight: 400;
+}
+
+.partner-bottom-btn {
+    margin-top: 48px;
+    width: 318px;
+}
+
+.partner-video {
+    width: 906px;
+    height: 510px;
+    margin-top: 64px;
+    border-radius: 20px;
+    background-color: rgba(233, 235, 240, 1);
+    background-image: url("./images/subtract.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+/*Forum*/
+
+.forum-bg {
+    margin-top: 148px;
+    padding-bottom: 148px;
+    background-color: rgba(241, 242, 245, 1);
+}
+
+.forum {
+    flex-direction: column;
+    align-items: center;
+}
+
+.forum-list {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    margin-top: 48px;
+}
+
+.forum-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(182, 187, 207, 1);
+}
+
+.forum-item-text {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: rgba(55, 60, 80, 1);
+}
+
+.forum-show {
+    cursor: pointer;
+}
+
+/*Footer*/
+
+.footer-bg {
+    background-color: rgba(29, 34, 54, 1);
+}
+
+.footer {
+    color: white;
+}
+
+.footer-top {
+    justify-content: space-between;
+    padding-bottom: 88px;
+}
+
+.footer-info {
+    width: 445px;
+}
+
+.footer-title {
+    color: white;
+}
+
+.footer-description {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.footer-data {
+    flex-direction: column;
+    gap: 20px;
+    width: 652px;
+}
+
+.data-push {
+    max-width: 318px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.footer-text {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.footer-agreement {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-bottom {
+    justify-content: space-between;
+    padding: 24px 0;
+    border-top: 1px solid rgba(80, 85, 105, 1);
+}
+
+.footer-navigation {
+    gap: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.footer-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.label-field {
+    max-width: 318px;
+}
+
+.footer-input {
+    gap: 16px;
+}
+
+.text-field {
+    width: 312px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid rgba(182, 187, 207, 1);
+}
