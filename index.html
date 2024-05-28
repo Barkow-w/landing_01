@@ -13,16 +13,26 @@
 </head>
 <body>
 <header>
-    <div class="auth d-flex">
-        <img class="auth-logo" src="./images/logo.png" alt="logo">
-        <div class="auth-buttons d-flex">
-            <button class="auth-buttons-registration">Зарегистрироваться</button>
-            <button class="auth-buttons-comeIn">Войти</button>
+    <div class="auth">
+        <div class="auth-container d-flex">
+            <img class="auth-logo" src="./images/logo.png" alt="logo">
+            <div class="auth-buttons d-flex">
+                <button class="auth-buttons-registration">Зарегистрироваться</button>
+                <button class="auth-buttons-comeIn">Войти</button>
+            </div>
+            <div class="auth-burger" onclick="showMenu()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="open">
+                    <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#F87F52" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <svg class="close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="close" style="display: none">
+                    <path d="M6 18L18 6M6 6L18 18" stroke="#F87F52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
         </div>
-        <div class="auth-burger">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#F87F52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+        <div class="burger-menu d-flex" id="burgerMenu" style="display: none">
+            <button class="burger-menu-btn">Зарегистрироваться</button>
+            <button class="burger-menu-btn">Войти</button>
         </div>
     </div>
 </header>

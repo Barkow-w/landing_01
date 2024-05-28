@@ -52,3 +52,17 @@ const showSix = () => {
     }
 }
 
+const showMenu = () => {
+    const burgerMenu = document.getElementById('burgerMenu')
+    const close = document.getElementById('close')
+    const open = document.getElementById('open')
+    if (burgerMenu.style.display === 'none') {
+        burgerMenu.style.display = 'flex'
+        close.style.display = 'block'
+        open.style.display = 'none'
+    } else {
+        burgerMenu.style.display = 'none'
+        close.style.display = 'none'
+        open.style.display = 'block'
+    }
+}

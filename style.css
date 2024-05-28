@@ -91,8 +91,9 @@ button {
 
 /*Auth*/
 
-.auth {
+.auth-container {
     justify-content: space-between;
+    align-items: center;
     padding: 26px 24px 26px 28px;
 
     @media (max-width: 1439px) {
@@ -107,6 +108,18 @@ button {
         padding: 16px 12px;
     }
 }
+
+.burger-menu {
+    flex-direction: column;
+    gap: 16px;
+    padding: 12px;
+}
+
+.burger-menu-btn {
+    width: 100%;
+}
+
+
 
 .auth-logo {
     height: 46px;
@@ -539,7 +552,7 @@ span {
 
 .bottom {
     display: none;
-    
+
     @media (max-width: 767px) {
         display: flex;
         gap: 20px;
@@ -922,7 +935,7 @@ span {
 .footer-input {
     flex-wrap: wrap;
     gap: 16px;
-    
+
     @media (max-width: 1439px) {
 
     }
