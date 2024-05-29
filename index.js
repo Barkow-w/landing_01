@@ -117,16 +117,43 @@ const showMenu = () => {
 }
 
 const pushForm = () => {
-    let nameModal = document.getElementById('name');
-    let telModal = document.getElementById('tel');
+    let nameField = document.getElementById('name');
+    let telField = document.getElementById('tel');
+    let mainModal = document.getElementById('modal')
+    let noneScroll = document.body
 
-    if (nameModal.value && telModal.value) {
-        console.log(nameModal.value, telModal.value)
+    if (nameField.value && telField.value) {
+        console.log(nameField.value, telField.value)
 
-        nameModal.value = ''
-        telModal.value = ''
+        nameField.value = ''
+        telField.value = ''
+        nameField.style.borderColor = null;
+        telField.style.borderColor = null;
+    } else {
+        if (!nameField.value) {
+            nameField.style.borderColor = 'red';
+        } else {
+            nameField.style.borderColor = null;
+        }
+        if (!telField.value) {
+            telField.style.borderColor = 'red';
+        } else {
+            telField.style.borderColor = null;
+        }
+    }
+
+
+    if (mainModal.style.display === 'none') {
+        mainModal.style.display = 'block'
+        noneScroll.style.overflowY = 'hidden'
+    } else {
+        mainModal.style.display = 'none'
+        noneScroll.style.overflowY = 'scroll'
     }
 }
+
+
+
 
 
 
