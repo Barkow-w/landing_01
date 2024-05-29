@@ -12,105 +12,286 @@
     <title>Title</title>
 </head>
 <body>
-<header>
-    <div class="auth">
-        <div class="auth-container d-flex">
-            <img class="auth-logo" src="./images/logo.png" alt="logo">
-            <div class="auth-buttons d-flex">
-                <button class="auth-buttons-registration">Зарегистрироваться</button>
-                <button class="auth-buttons-comeIn">Войти</button>
-            </div>
-            <div class="auth-burger" onclick="showMenu()">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="open">
-                    <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#F87F52" stroke-width="1.5"
-                          stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <svg class="close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="close" style="display: none">
-                    <path d="M6 18L18 6M6 6L18 18" stroke="#F87F52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-        </div>
-        <div class="burger-menu d-flex" id="burgerMenu" style="display: none">
-            <button class="burger-menu-btn">Зарегистрироваться</button>
-            <button class="burger-menu-btn">Войти</button>
-        </div>
-    </div>
-</header>
 
-<main>
-    <section id="hero">
-        <div class="hero-content">
-            <img class="hero-image" src="./images/hero.png" alt="hero" style="width: 100%">
-            <img class="hero-image-media" src="./images/hero-media.png" alt="hero">
-            <img class="hero-image-mobile" src="./images/hero-mobile.png" alt="hero">
+<div id="app">
+    <header>
+        <div class="auth">
+            <div class="auth-container d-flex">
+                <img class="auth-logo" src="./images/logo.png" alt="logo">
+                <div class="auth-buttons d-flex">
+                    <a class="auth-buttons-registration button" href="https://kb.moneyback.ru" target="_blank">Зарегистрироваться</a>
+                    <a class="auth-buttons-comeIn button" href="https://kb.moneyback.ru" target="_blank">Войти</a>
+                </div>
+                <div class="auth-burger" onclick="showMenu()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                         id="open">
+                        <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#F87F52" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg class="close" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg" id="close" style="display: none">
+                        <path d="M6 18L18 6M6 6L18 18" stroke="#F87F52" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="burger-menu" id="burgerMenu" style="display: none">
+                <a class="burger-menu-btn button" href="https://kb.moneyback.ru" target="_blank">Зарегистрироваться</a>
+                <a class="burger-menu-btn button" href="https://kb.moneyback.ru" target="_blank">Войти</a>
+            </div>
         </div>
-    </section>
+    </header>
 
-    <section id="articles">
-        <div class="container">
-            <div class="articles-content">
-                <h2 class="articles-title">
-                    Преимущества сотрудничества с нами
-                </h2>
-                <div class="articles-list d-flex">
-                    <div class="articles-item reward d-flex">
-                        <img class="articles-image" src="./images/discount_isometric1.png" alt="image">
-                        <div class="articles-item-block">
-                            <div class="articles-block-title d-flex">
-                                Вознаграждение <span>до 7%</span> от чека
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <img class="hero-image" src="./images/hero.png" alt="hero" style="width: 100%">
+                <img class="hero-image-height" src="./images/hero1440.png" alt="hero">
+                <img class="hero-image-media" src="./images/hero-media.png" alt="hero">
+                <img class="hero-image-mobile" src="./images/hero-mobile.png" alt="hero">
+            </div>
+        </section>
+
+        <section id="articles">
+            <div class="container">
+                <div class="articles-content">
+                    <h2 class="articles-title">
+                        Преимущества сотрудничества с нами
+                    </h2>
+                    <div class="articles-list d-flex">
+                        <div class="articles-item reward d-flex">
+                            <img class="articles-image" src="./images/discount_isometric1.png" alt="image">
+                            <div class="articles-item-block">
+                                <div class="articles-block-title d-flex">
+                                    Вознаграждение <span>до 7%</span> от чека
+                                </div>
+                                <p class="articles-block-description">
+                                    В зависимости от категории товара, а так же акционных предложений вы сможете
+                                    получить от
+                                    2% до 7% от суммы покупки клиента.
+                                    Вторично разогретая пища, особенно если после её приготовления прошло уже несколько
+                                    часов, практически не содержит ни витаминов,
+                                    ни других полезных веществ.
+                                </p>
                             </div>
-                            <p class="articles-block-description">
-                                В зависимости от категории товара, а так же акционных предложений вы сможете получить от
-                                2% до 7% от суммы покупки клиента.
-                                Вторично разогретая пища, особенно если после её приготовления прошло уже несколько
-                                часов, практически не содержит ни витаминов,
-                                ни других полезных веществ.
-                            </p>
                         </div>
-                    </div>
-                    <div class="articles-item transfer d-flex">
-                        <div class="articles-item-block">
-                            <div class="articles-block-title d-flex">
-                                Перечисление средств <span>еженедельно</span>
+                        <div class="articles-item transfer d-flex">
+                            <div class="articles-item-block">
+                                <div class="articles-block-title d-flex">
+                                    Перечисление средств <span>еженедельно</span>
+                                </div>
+                                <p class="articles-block-description">
+                                    Жизнь в большом городе зачастую накладывает на людей очень много обязательств,
+                                    которые
+                                    многим мешают планировать свое время.
+                                    Поэтому времени катастрофически не хватает на все, в том числе и на нормальную
+                                    здоровую
+                                    пищу.
+                                    Полезные продукты необходимо включать в рацион каждый день.
+                                </p>
                             </div>
-                            <p class="articles-block-description">
-                                Жизнь в большом городе зачастую накладывает на людей очень много обязательств, которые
-                                многим мешают планировать свое время.
-                                Поэтому времени катастрофически не хватает на все, в том числе и на нормальную здоровую
-                                пищу.
-                                Полезные продукты необходимо включать в рацион каждый день.
-                            </p>
+                            <img class="articles-image" src="./images/discount_isometric2.png" alt="image">
                         </div>
-                        <img class="articles-image" src="./images/discount_isometric2.png" alt="image">
-                    </div>
-                    <div class="articles-item statistics d-flex">
-                        <img class="articles-image" src="./images/discount_isometric3.png" alt="image">
-                        <div class="articles-item-block">
-                            <div class="articles-block-title d-flex">
-                                Удобная и полная <span>статистика</span>
+                        <div class="articles-item statistics d-flex">
+                            <img class="articles-image" src="./images/discount_isometric3.png" alt="image">
+                            <div class="articles-item-block">
+                                <div class="articles-block-title d-flex">
+                                    Удобная и полная <span>статистика</span>
+                                </div>
+                                <p class="articles-block-description">
+                                    С целью снизить число людей с ожирением рестораны быстрого питания и сети
+                                    супермаркетов
+                                    вводят новые,
+                                    более полезные опции (например, салаты, сэндвичи с цельнозерновым хлебом или напитки
+                                    без
+                                    сахара),
+                                    а также предоставляют информацию о пищевой ценности продуктов в меню или на
+                                    упаковке.
+                                </p>
                             </div>
-                            <p class="articles-block-description">
-                                С целью снизить число людей с ожирением рестораны быстрого питания и сети супермаркетов
-                                вводят новые,
-                                более полезные опции (например, салаты, сэндвичи с цельнозерновым хлебом или напитки без
-                                сахара),
-                                а также предоставляют информацию о пищевой ценности продуктов в меню или на упаковке.
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="comments">
-        <div class="container">
-            <div class="comments-content">
-                <div class="comments-header d-flex">
-                    <h2 class="comments-title">
-                        Что говорят о платформе промоутеры?
-                    </h2>
-                    <div class="comments-slider d-flex">
+        <section id="comments">
+            <div class="container">
+                <div class="comments-content">
+                    <div class="comments-header d-flex">
+                        <h2 class="comments-title">
+                            Что говорят о платформе промоутеры?
+                        </h2>
+                        <div class="comments-slider d-flex">
+                            <button class="comments-btn" onclick="back()">
+                                <svg class="comments-btn-icon" width="10" height="18" viewBox="0 0 10 18" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.75 16.5L1.25 9L8.75 1.5" stroke="#373C50" stroke-width="1.5"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <button class="comments-btn" onclick="next()">
+                                <svg class="comments-btn-icon" width="10" height="18" viewBox="0 0 10 18" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.25 1.5L8.75 9L1.25 16.5" stroke="#373C50" stroke-width="1.5"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="comments-list" id="comment-list">
+                        <div class="comments-list-page d-flex" id="pageOne">
+                            <div class="comments-item d-flex">
+                                <div class="comments-avatar d-flex">
+                                    <img class="comments-icon" src="./images/avatar1.png" alt="avatar">
+                                    <div class="comments-avatar-info">
+                                        <div class="comments-avatar-name">Иванов Петр</div>
+                                        <div class="comments-avatar-text">Сотрудничает около 6 месяцев</div>
+                                    </div>
+                                </div>
+                                <div class="comments-text">
+                                    <p class="comments-description">
+                                        С целью снизить число людей с ожирением рестораны быстрого питания и сети
+                                        супермаркетов
+                                        вводят новые,
+                                        более полезные опции (например, салаты, сэндвичи с цельнозерновым хлебом или
+                                        напитки
+                                        без
+                                        сахара),
+                                        а также предоставляют информацию о пищевой ценности продуктов в меню или на
+                                        упаковке.
+                                    </p>
+                                    <div class="comments-date">
+                                        12 марта 2024
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comments-item comments-scroll d-flex">
+                                <div class="comments-avatar d-flex">
+                                    <img class="comments-icon" src="./images/avatar2.png" alt="avatar">
+                                    <div class="comments-avatar-info">
+                                        <div class="comments-avatar-name">Милана Четвертикова</div>
+                                        <div class="comments-avatar-text">Сотрудничает около 6 месяцев</div>
+                                    </div>
+                                </div>
+                                <div class="comments-text">
+                                    <p class="comments-description">
+                                        Жизнь в большом городе зачастую накладывает на людей очень много обязательств,
+                                        которые
+                                        многим мешают планировать свое время.
+                                        Поэтому времени катастрофически не хватает на все, в том числе и на нормальную
+                                        здоровую
+                                        пищу.
+                                        Полезные продукты необходимо включать в рацион каждый день.
+                                    </p>
+                                    <div class="comments-date">
+                                        12 марта 2024
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments-list-page" style="display: none" id="pageTwo">
+                            <div class="comments-item d-flex">
+                                <div class="comments-avatar d-flex">
+                                    <img class="comments-icon" src="./images/avatar1.png" alt="avatar">
+                                    <div class="comments-avatar-info">
+                                        <div class="comments-avatar-name">Шагинян Арут</div>
+                                        <div class="comments-avatar-text">Сотрудничает около 6 месяцев</div>
+                                    </div>
+                                </div>
+                                <div class="comments-text">
+                                    <p class="comments-description">
+                                        С целью снизить число людей с ожирением рестораны быстрого питания и сети
+                                        супермаркетов
+                                        вводят новые,
+                                        более полезные опции (например, салаты, сэндвичи с цельнозерновым хлебом или
+                                        напитки
+                                        без
+                                        сахара),
+                                        а также предоставляют информацию о пищевой ценности продуктов в меню или на
+                                        упаковке.
+                                    </p>
+                                    <div class="comments-date">
+                                        22 мая 2024
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comments-item comments-scroll d-flex">
+                                <div class="comments-avatar d-flex">
+                                    <img class="comments-icon" src="./images/avatar2.png" alt="avatar">
+                                    <div class="comments-avatar-info">
+                                        <div class="comments-avatar-name">Виктория Орлова</div>
+                                        <div class="comments-avatar-text">Сотрудничает около 3 месяцев</div>
+                                    </div>
+                                </div>
+                                <div class="comments-text">
+                                    <p class="comments-description">
+                                        Жизнь в большом городе зачастую накладывает на людей очень много обязательств,
+                                        которые
+                                        многим мешают планировать свое время.
+                                        Поэтому времени катастрофически не хватает на все, в том числе и на нормальную
+                                        здоровую
+                                        пищу.
+                                        Полезные продукты необходимо включать в рацион каждый день.
+                                    </p>
+                                    <div class="comments-date">
+                                        18 марта 2024
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments-list-page d-flex" style="display: none" id="pageThree">
+                            <div class="comments-item d-flex">
+                                <div class="comments-avatar d-flex">
+                                    <img class="comments-icon" src="./images/avatar1.png" alt="avatar">
+                                    <div class="comments-avatar-info">
+                                        <div class="comments-avatar-name">Иванов Петр</div>
+                                        <div class="comments-avatar-text">Сотрудничает около 6 месяцев</div>
+                                    </div>
+                                </div>
+                                <div class="comments-text">
+                                    <p class="comments-description">
+                                        С целью снизить число людей с ожирением рестораны быстрого питания и сети
+                                        супермаркетов
+                                        вводят новые,
+                                        более полезные опции (например, салаты, сэндвичи с цельнозерновым хлебом или
+                                        напитки
+                                        без
+                                        сахара),
+                                        а также предоставляют информацию о пищевой ценности продуктов в меню или на
+                                        упаковке.
+                                    </p>
+                                    <div class="comments-date">
+                                        12 марта 2024
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comments-item comments-scroll d-flex">
+                                <div class="comments-avatar d-flex">
+                                    <img class="comments-icon" src="./images/avatar2.png" alt="avatar">
+                                    <div class="comments-avatar-info">
+                                        <div class="comments-avatar-name">Милана Четвертикова</div>
+                                        <div class="comments-avatar-text">Сотрудничает около 6 месяцев</div>
+                                    </div>
+                                </div>
+                                <div class="comments-text">
+                                    <p class="comments-description">
+                                        Жизнь в большом городе зачастую накладывает на людей очень много обязательств,
+                                        которые
+                                        многим мешают планировать свое время.
+                                        Поэтому времени катастрофически не хватает на все, в том числе и на нормальную
+                                        здоровую
+                                        пищу.
+                                        Полезные продукты необходимо включать в рацион каждый день.
+                                    </p>
+                                    <div class="comments-date">
+                                        12 марта 2024
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments-slider bottom d-flex">
                         <button class="comments-btn">
                             <svg class="comments-btn-icon" width="10" height="18" viewBox="0 0 10 18" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -127,351 +308,301 @@
                         </button>
                     </div>
                 </div>
-                <div class="comments-list d-flex" id="comment-list">
-                    <div class="comments-item d-flex">
-                        <div class="comments-avatar d-flex">
-                            <img class="comments-icon" src="./images/avatar1.png" alt="avatar">
-                            <div class="comments-avatar-info">
-                                <div class="comments-avatar-name">Иванов Петр</div>
-                                <div class="comments-avatar-text">Сотрудничает около 6 месяцев</div>
-                            </div>
-                        </div>
-                        <div class="comments-text">
-                            <p class="comments-description">
-                                С целью снизить число людей с ожирением рестораны быстрого питания и сети супермаркетов
-                                вводят новые,
-                                более полезные опции (например, салаты, сэндвичи с цельнозерновым хлебом или напитки без
-                                сахара),
-                                а также предоставляют информацию о пищевой ценности продуктов в меню или на упаковке.
-                            </p>
-                            <div class="comments-date">
-                                12 марта 2024
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comments-item comments-scroll d-flex">
-                        <div class="comments-avatar d-flex">
-                            <img class="comments-icon" src="./images/avatar2.png" alt="avatar">
-                            <div class="comments-avatar-info">
-                                <div class="comments-avatar-name">Милана Четвертикова</div>
-                                <div class="comments-avatar-text">Сотрудничает около 6 месяцев</div>
-                            </div>
-                        </div>
-                        <div class="comments-text">
-                            <p class="comments-description">
-                                Жизнь в большом городе зачастую накладывает на людей очень много обязательств, которые
-                                многим мешают планировать свое время.
-                                Поэтому времени катастрофически не хватает на все, в том числе и на нормальную здоровую
-                                пищу.
-                                Полезные продукты необходимо включать в рацион каждый день.
-                            </p>
-                            <div class="comments-date">
-                                12 марта 2024
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="comments-slider bottom d-flex">
-                    <button class="comments-btn">
-                        <svg class="comments-btn-icon" width="10" height="18" viewBox="0 0 10 18" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8.75 16.5L1.25 9L8.75 1.5" stroke="#373C50" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <button class="comments-btn">
-                        <svg class="comments-btn-icon" width="10" height="18" viewBox="0 0 10 18" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.25 1.5L8.75 9L1.25 16.5" stroke="#373C50" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="partner">
-        <div class="container">
-            <div class="partner d-flex">
-                <h2 class="partner-title">
-                    Как стать партнёром и начать зарабатывать?
-                </h2>
-                <div class="partner-list d-flex">
-                    <div class="partner-item">
-                        <img class="partner-image" src="./images/number1.png" alt="">
-                        <p class="partner-description">
-                            Зарегистрируйтесь
-                            на нашем сайте
-                        </p>
-                    </div>
-                    <div class="partner-item">
-                        <img class="partner-image" src="./images/number2.png" alt="">
-                        <p class="partner-description">
-                            Подключитесь к программе лояльности
-                        </p>
-                    </div>
-                    <div class="partner-item">
-                        <img class="partner-image" src="./images/number3.png" alt="">
-                        <p class="partner-description">
-                            Привлекайте клиентов, отслеживайте продажи
-                        </p>
-                    </div>
-                    <div class="partner-item">
-                        <img class="partner-image" src="./images/number4.png" alt="">
-                        <p class="partner-description">
-                            Получайте вознаграждение
-                        </p>
-                    </div>
-                </div>
-                <button class="partner-bottom-btn">Стать промоутером</button>
-                <div class="partner-video">
-                    <!--                    <img src="./images/subtract.png" alt="video">-->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="forum">
-        <div class="forum-bg">
+        <section id="partner">
             <div class="container">
-                <div class="forum d-flex">
-                    <h2 class="forum-title">
-                        Ответы на частые вопросы
+                <div class="partner d-flex">
+                    <h2 class="partner-title">
+                        Как стать партнёром и начать зарабатывать?
                     </h2>
-                    <div class="forum-list d-flex">
-                        <div class="forum-item">
-                            <div class="forum-container">
-                                <div class="forum-item-text">
-                                    Сколько процентов комиссии получает промоутер за разные категории товаров?
-                                </div>
-                                <div class="forum-show" onclick="showOne()">
-                                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M16.5 1.25L9 8.75L1.5 1.25" stroke="#373C50" stroke-width="1.5"
-                                              stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="forum-content" id="one" style="display: none">
-                                Ценность яблок кроется в их составе. Почти 80% яблок составляет вода. Остальная
-                                часть приходится на клетчатку, органические кислоты, углеводы.
-                                Именно зеленое яблоко рекомендуют употреблять во время диет.
-                                Среди фруктов яблоко является очень распространенным продуктом и практически целый
-                                год присутствует в нашем рационе питания.
-                                Употребление этих плодов натощак недопустимо при гастритах с повышенной
-                                кислотностью, язвенных болезнях, желчекаменной болезни.
-                                Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и
-                                вареной куриной грудки.
-                                Самыми лучшими способами приготовления еды являются следующие: варка на пару,
-                                запекание или варка в воде.
-                                Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут
-                                необычные, экзотические фрукты.
-                                Здоровой может быть даже выпечка, если она приготовлена на пару.
-                            </div>
+                    <div class="partner-list d-flex">
+                        <div class="partner-item">
+                            <img class="partner-image" src="./images/number1.png" alt="">
+                            <p class="partner-description">
+                                Зарегистрируйтесь
+                                на нашем сайте
+                            </p>
                         </div>
-                        <div class="forum-item">
-                            <div class="forum-container">
-                                <div class="forum-item-text">
-                                    Какие документы требуются для подключения к программе?
-                                </div>
-                                <div class="forum-show" onclick="showTwo()">
-                                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M16.5 1.25L9 8.75L1.5 1.25" stroke="#373C50" stroke-width="1.5"
-                                              stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="forum-content" id="two" style="display: none">
-                                Ценность яблок кроется в их составе. Почти 80% яблок составляет вода. Остальная
-                                часть приходится на клетчатку, органические кислоты, углеводы.
-                                Именно зеленое яблоко рекомендуют употреблять во время диет.
-                                Среди фруктов яблоко является очень распространенным продуктом и практически целый
-                                год присутствует в нашем рационе питания.
-                                Употребление этих плодов натощак недопустимо при гастритах с повышенной
-                                кислотностью, язвенных болезнях, желчекаменной болезни.
-                                Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и
-                                вареной куриной грудки.
-                                Самыми лучшими способами приготовления еды являются следующие: варка на пару,
-                                запекание или варка в воде.
-                                Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут
-                                необычные, экзотические фрукты.
-                                Здоровой может быть даже выпечка, если она приготовлена на пару.
-                            </div>
+                        <div class="partner-item">
+                            <img class="partner-image" src="./images/number2.png" alt="">
+                            <p class="partner-description">
+                                Подключитесь к программе лояльности
+                            </p>
                         </div>
-                        <div class="forum-item">
-                            <div class="forum-container">
-                                <div class="forum-item-text">
-                                    Сколько времени занимает рассмотрение заявки на подключение?
-                                </div>
-                                <div class="forum-show" onclick="showThree()">
-                                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M16.5 1.25L9 8.75L1.5 1.25" stroke="#373C50" stroke-width="1.5"
-                                              stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="forum-content" id="three" style="display: none">
-                                Ценность яблок кроется в их составе. Почти 80% яблок составляет вода. Остальная
-                                часть приходится на клетчатку, органические кислоты, углеводы.
-                                Именно зеленое яблоко рекомендуют употреблять во время диет.
-                                Среди фруктов яблоко является очень распространенным продуктом и практически целый
-                                год присутствует в нашем рационе питания.
-                                Употребление этих плодов натощак недопустимо при гастритах с повышенной
-                                кислотностью, язвенных болезнях, желчекаменной болезни.
-                                Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и
-                                вареной куриной грудки.
-                                Самыми лучшими способами приготовления еды являются следующие: варка на пару,
-                                запекание или варка в воде.
-                                Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут
-                                необычные, экзотические фрукты.
-                                Здоровой может быть даже выпечка, если она приготовлена на пару.
-                            </div>
+                        <div class="partner-item">
+                            <img class="partner-image" src="./images/number3.png" alt="">
+                            <p class="partner-description">
+                                Привлекайте клиентов, отслеживайте продажи
+                            </p>
                         </div>
-                        <div class="forum-item">
-                            <div class="forum-container">
-                                <div class="forum-item-text">
-                                    Какими способами перечисляются средства на счет промоутера?
-                                </div>
-                                <div class="forum-show" onclick="showFour()">
-                                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M16.5 1.25L9 8.75L1.5 1.25" stroke="#373C50" stroke-width="1.5"
-                                              stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="forum-content" id="four" style="display: none">
-                                Ценность яблок кроется в их составе. Почти 80% яблок составляет вода. Остальная
-                                часть приходится на клетчатку, органические кислоты, углеводы.
-                                Именно зеленое яблоко рекомендуют употреблять во время диет.
-                                Среди фруктов яблоко является очень распространенным продуктом и практически целый
-                                год присутствует в нашем рационе питания.
-                                Употребление этих плодов натощак недопустимо при гастритах с повышенной
-                                кислотностью, язвенных болезнях, желчекаменной болезни.
-                                Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и
-                                вареной куриной грудки.
-                                Самыми лучшими способами приготовления еды являются следующие: варка на пару,
-                                запекание или варка в воде.
-                                Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут
-                                необычные, экзотические фрукты.
-                                Здоровой может быть даже выпечка, если она приготовлена на пару.
-                            </div>
-                        </div>
-                        <div class="forum-item">
-                            <div class="forum-container">
-                                <div class="forum-item-text">
-                                    Какие инструменты может использовать промоутер для привлечения клиентов?
-                                </div>
-                                <div class="forum-show" onclick="showFive()">
-                                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M16.5 1.25L9 8.75L1.5 1.25" stroke="#373C50" stroke-width="1.5"
-                                              stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="forum-content" id="five" style="display: none">
-                                Ценность яблок кроется в их составе. Почти 80% яблок составляет вода. Остальная
-                                часть приходится на клетчатку, органические кислоты, углеводы.
-                                Именно зеленое яблоко рекомендуют употреблять во время диет.
-                                Среди фруктов яблоко является очень распространенным продуктом и практически целый
-                                год присутствует в нашем рационе питания.
-                                Употребление этих плодов натощак недопустимо при гастритах с повышенной
-                                кислотностью, язвенных болезнях, желчекаменной болезни.
-                                Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и
-                                вареной куриной грудки.
-                                Самыми лучшими способами приготовления еды являются следующие: варка на пару,
-                                запекание или варка в воде.
-                                Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут
-                                необычные, экзотические фрукты.
-                                Здоровой может быть даже выпечка, если она приготовлена на пару.
-                            </div>
-                        </div>
-                        <div class="forum-item">
-                            <div class="forum-container">
-                                <div class="forum-item-text">
-                                    Сколько процентов комиссии получает промоутер за разные категории товаров?
-                                </div>
-                                <div class="forum-show" onclick="showSix()">
-                                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M16.5 1.25L9 8.75L1.5 1.25" stroke="#373C50" stroke-width="1.5"
-                                              stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="forum-content" id="six" style="display: none">
-                                Ценность яблок кроется в их составе. Почти 80% яблок составляет вода. Остальная
-                                часть приходится на клетчатку, органические кислоты, углеводы.
-                                Именно зеленое яблоко рекомендуют употреблять во время диет.
-                                Среди фруктов яблоко является очень распространенным продуктом и практически целый
-                                год присутствует в нашем рационе питания.
-                                Употребление этих плодов натощак недопустимо при гастритах с повышенной
-                                кислотностью, язвенных болезнях, желчекаменной болезни.
-                                Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и
-                                вареной куриной грудки.
-                                Самыми лучшими способами приготовления еды являются следующие: варка на пару,
-                                запекание или варка в воде.
-                                Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут
-                                необычные, экзотические фрукты.
-                                Здоровой может быть даже выпечка, если она приготовлена на пару.
-                            </div>
+                        <div class="partner-item">
+                            <img class="partner-image" src="./images/number4.png" alt="">
+                            <p class="partner-description">
+                                Получайте вознаграждение
+                            </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-<footer>
-    <div class="footer-bg">
-        <div class="container">
-            <div class="footer">
-                <div class="footer-top d-flex">
-                    <div class="footer-info">
-                        <h2 class="footer-title">
-                            Поможем решить все вопросы
-                        </h2>
-                        <div class="footer-description">
-                            Если вы хотите больше узнать о нашей платформе, оставьте заявку — и мы перезвоним
-                        </div>
-                    </div>
-                    <div class="footer-data d-flex">
-                        <div class="footer-input d-flex">
-                            <label class="label-field" for="name">
-                                <input class="text-field" id="name" type="text" placeholder="Имя">
-                            </label>
-                            <label class="label-field" for="tel">
-                                <input class="text-field" id="tel" type="tel" placeholder="+7 (999) 999 - 99 - 99">
-                            </label>
-                            <button class="data-push">Отправить</button>
-                        </div>
+                    <button class="partner-bottom-btn">Стать промоутером</button>
+                    <div onclick="play()">
+                        <video class="partner-video" id="video"
+                               src="./video/testVideo.mp4"
+                               controls>
 
-                        <div class="footer-text">
-                            Нажимая на кнопку, вы соглашаетесь на <span class="footer-agreement">обработку персональных данных</span>
-                            и с
-                            <span class="footer-agreement">правилами пользования Платформой</span>
+                            <!--                    <img src="./images/subtract.png" alt="video">-->
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="forum">
+            <div class="forum-bg">
+                <div class="container">
+                    <div class="forum d-flex">
+                        <h2 class="forum-title">
+                            Ответы на частые вопросы
+                        </h2>
+                        <div class="forum-list d-flex">
+                            <div class="forum-item">
+                                <div class="forum-container">
+                                    <div class="forum-item-text">
+                                        Сколько процентов комиссии получает промоутер за разные категории товаров?
+                                    </div>
+                                    <div class="forum-show" onclick="showOne()">
+                                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.5 1.25L9 8.75L1.5 1.25" stroke="#373C50" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="forum-content" id="one" style="display: none">
+                                    Ценность яблок кроется в их составе. Почти 80% яблок составляет вода. Остальная
+                                    часть приходится на клетчатку, органические кислоты, углеводы.
+                                    Именно зеленое яблоко рекомендуют употреблять во время диет.
+                                    Среди фруктов яблоко является очень распространенным продуктом и практически целый
+                                    год присутствует в нашем рационе питания.
+                                    Употребление этих плодов натощак недопустимо при гастритах с повышенной
+                                    кислотностью, язвенных болезнях, желчекаменной болезни.
+                                    Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и
+                                    вареной куриной грудки.
+                                    Самыми лучшими способами приготовления еды являются следующие: варка на пару,
+                                    запекание или варка в воде.
+                                    Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут
+                                    необычные, экзотические фрукты.
+                                    Здоровой может быть даже выпечка, если она приготовлена на пару.
+                                </div>
+                            </div>
+                            <div class="forum-item">
+                                <div class="forum-container">
+                                    <div class="forum-item-text">
+                                        Какие документы требуются для подключения к программе?
+                                    </div>
+                                    <div class="forum-show" onclick="showTwo()">
+                                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.5 1.25L9 8.75L1.5 1.25" stroke="#373C50" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="forum-content" id="two" style="display: none">
+                                    Ценность яблок кроется в их составе. Почти 80% яблок составляет вода. Остальная
+                                    часть приходится на клетчатку, органические кислоты, углеводы.
+                                    Именно зеленое яблоко рекомендуют употреблять во время диет.
+                                    Среди фруктов яблоко является очень распространенным продуктом и практически целый
+                                    год присутствует в нашем рационе питания.
+                                    Употребление этих плодов натощак недопустимо при гастритах с повышенной
+                                    кислотностью, язвенных болезнях, желчекаменной болезни.
+                                    Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и
+                                    вареной куриной грудки.
+                                    Самыми лучшими способами приготовления еды являются следующие: варка на пару,
+                                    запекание или варка в воде.
+                                    Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут
+                                    необычные, экзотические фрукты.
+                                    Здоровой может быть даже выпечка, если она приготовлена на пару.
+                                </div>
+                            </div>
+                            <div class="forum-item">
+                                <div class="forum-container">
+                                    <div class="forum-item-text">
+                                        Сколько времени занимает рассмотрение заявки на подключение?
+                                    </div>
+                                    <div class="forum-show" onclick="showThree()">
+                                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.5 1.25L9 8.75L1.5 1.25" stroke="#373C50" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="forum-content" id="three" style="display: none">
+                                    Ценность яблок кроется в их составе. Почти 80% яблок составляет вода. Остальная
+                                    часть приходится на клетчатку, органические кислоты, углеводы.
+                                    Именно зеленое яблоко рекомендуют употреблять во время диет.
+                                    Среди фруктов яблоко является очень распространенным продуктом и практически целый
+                                    год присутствует в нашем рационе питания.
+                                    Употребление этих плодов натощак недопустимо при гастритах с повышенной
+                                    кислотностью, язвенных болезнях, желчекаменной болезни.
+                                    Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и
+                                    вареной куриной грудки.
+                                    Самыми лучшими способами приготовления еды являются следующие: варка на пару,
+                                    запекание или варка в воде.
+                                    Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут
+                                    необычные, экзотические фрукты.
+                                    Здоровой может быть даже выпечка, если она приготовлена на пару.
+                                </div>
+                            </div>
+                            <div class="forum-item">
+                                <div class="forum-container">
+                                    <div class="forum-item-text">
+                                        Какими способами перечисляются средства на счет промоутера?
+                                    </div>
+                                    <div class="forum-show" onclick="showFour()">
+                                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.5 1.25L9 8.75L1.5 1.25" stroke="#373C50" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="forum-content" id="four" style="display: none">
+                                    Ценность яблок кроется в их составе. Почти 80% яблок составляет вода. Остальная
+                                    часть приходится на клетчатку, органические кислоты, углеводы.
+                                    Именно зеленое яблоко рекомендуют употреблять во время диет.
+                                    Среди фруктов яблоко является очень распространенным продуктом и практически целый
+                                    год присутствует в нашем рационе питания.
+                                    Употребление этих плодов натощак недопустимо при гастритах с повышенной
+                                    кислотностью, язвенных болезнях, желчекаменной болезни.
+                                    Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и
+                                    вареной куриной грудки.
+                                    Самыми лучшими способами приготовления еды являются следующие: варка на пару,
+                                    запекание или варка в воде.
+                                    Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут
+                                    необычные, экзотические фрукты.
+                                    Здоровой может быть даже выпечка, если она приготовлена на пару.
+                                </div>
+                            </div>
+                            <div class="forum-item" v-for="commentItem in getUsers">
+                                <div class="forum-container">
+                                    <div class="forum-item-text">
+                                        Какие инструменты может использовать промоутер для привлечения клиентов?
+                                    </div>
+                                    <div class="forum-show" onclick="showFive()">
+                                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.5 1.25L9 8.75L1.5 1.25" stroke="#373C50" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="forum-content" id="five" style="display: none">
+                                    Ценность яблок кроется в их составе. Почти 80% яблок составляет вода. Остальная
+                                    часть приходится на клетчатку, органические кислоты, углеводы.
+                                    Именно зеленое яблоко рекомендуют употреблять во время диет.
+                                    Среди фруктов яблоко является очень распространенным продуктом и практически целый
+                                    год присутствует в нашем рационе питания.
+                                    Употребление этих плодов натощак недопустимо при гастритах с повышенной
+                                    кислотностью, язвенных болезнях, желчекаменной болезни.
+                                    Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и
+                                    вареной куриной грудки.
+                                    Самыми лучшими способами приготовления еды являются следующие: варка на пару,
+                                    запекание или варка в воде.
+                                    Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут
+                                    необычные, экзотические фрукты.
+                                    Здоровой может быть даже выпечка, если она приготовлена на пару.
+                                </div>
+                            </div>
+                            <div class="forum-item">
+                                <div class="forum-container">
+                                    <div class="forum-item-text">
+                                        Сколько процентов комиссии получает промоутер за разные категории товаров?
+                                    </div>
+                                    <div class="forum-show" onclick="showSix()">
+                                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.5 1.25L9 8.75L1.5 1.25" stroke="#373C50" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="forum-content" id="six" style="display: none">
+                                    Ценность яблок кроется в их составе. Почти 80% яблок составляет вода. Остальная
+                                    часть приходится на клетчатку, органические кислоты, углеводы.
+                                    Именно зеленое яблоко рекомендуют употреблять во время диет.
+                                    Среди фруктов яблоко является очень распространенным продуктом и практически целый
+                                    год присутствует в нашем рационе питания.
+                                    Употребление этих плодов натощак недопустимо при гастритах с повышенной
+                                    кислотностью, язвенных болезнях, желчекаменной болезни.
+                                    Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и
+                                    вареной куриной грудки.
+                                    Самыми лучшими способами приготовления еды являются следующие: варка на пару,
+                                    запекание или варка в воде.
+                                    Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут
+                                    необычные, экзотические фрукты.
+                                    Здоровой может быть даже выпечка, если она приготовлена на пару.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="footer-bottom d-flex">
-                    <div class="footer-company">
-                        2024 © Кухни Беларуси
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-bg">
+            <div class="container footer-container">
+                <div class="footer">
+                    <div class="footer-top d-flex">
+                        <div class="footer-info">
+                            <h2 class="footer-title">
+                                Поможем решить все вопросы
+                            </h2>
+                            <div class="footer-description">
+                                Если вы хотите больше узнать о нашей платформе, оставьте заявку — и мы перезвоним
+                            </div>
+                        </div>
+                        <div class="footer-data d-flex">
+                            <div class="footer-input d-flex">
+                                <label class="label-field" for="name">
+                                    <input class="text-field" id="name" type="text" placeholder="Имя">
+                                </label>
+                                <label class="label-field" for="tel">
+                                    <input class="text-field" id="tel" type="tel" placeholder="+7 (999) 999 - 99 - 99">
+                                </label>
+                                <button class="data-push" onclick="pushForm()">Отправить</button>
+                            </div>
+
+                            <div class="footer-text">
+                                Нажимая на кнопку, вы соглашаетесь на <a class="footer-agreement"
+                                                                         href="https://kb.moneyback.ru/p/policy"
+                                                                         target="_blank">обработку персональных
+                                данных</a>
+                                и с
+                                <a class="footer-agreement" href="https://kb.moneyback.ru/p/policy" target="_blank">правилами
+                                    пользования Платформой</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="footer-navigation d-flex">
-                        <a class="footer-link">Преимущества</a>
-                        <a class="footer-link">Отзывы</a>
-                        <a class="footer-link">Как стать партнёром</a>
-                        <a class="footer-link">Ответы на частые вопросы</a>
+                    <div class="footer-bottom d-flex">
+                        <div class="footer-company">
+                            2024 © Кухни Беларуси
+                        </div>
+                        <div class="footer-navigation d-flex">
+                            <a class="footer-link" onclick="advantages()">Преимущества</a>
+                            <a class="footer-link" onclick="comments()">Отзывы</a>
+                            <a class="footer-link" onclick="partner()">Как стать партнёром</a>
+                            <a class="footer-link" onclick="forum()">Ответы на частые вопросы</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-<script src="index.js"></script>
+    </footer>
+    <script src="index.js"></script>
+</div>
+
 </body>
 </html>

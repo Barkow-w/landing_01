@@ -60,6 +60,35 @@ button {
     }
 }
 
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--primary-500-color);
+
+    @media (max-width: 1439px) {
+        height: 48px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    @media (max-width: 1023px) {
+        height: 40px;
+        padding: 0 32px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
 .container {
     margin: 0 auto;
     padding-top: 148px;
@@ -110,16 +139,17 @@ button {
 }
 
 .burger-menu {
-    flex-direction: column;
-    gap: 16px;
-    padding: 12px;
+    display: none;
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: calc(100% - 25px);
+        padding: 12px;
+        position: absolute;
+        background-color: white;
+    }
 }
-
-.burger-menu-btn {
-    width: 100%;
-}
-
-
 
 .auth-logo {
     height: 46px;
@@ -174,6 +204,20 @@ button {
 /*Hero*/
 
 .hero-image {
+    @media (max-width: 1919px) {
+        display: none;
+    }
+}
+
+.hero-image-height {
+    display: none;
+
+    @media (max-width: 1919px) {
+        display: block;
+        width: 100%;
+        max-height: 800px;
+    }
+
     @media (max-width: 1439px) {
         display: none;
     }
@@ -221,6 +265,11 @@ button {
 
     @media (max-width: 1023px) {
         margin-top: 68px;
+    }
+
+    @media (max-width: 767px) {
+        gap: 32px;
+        margin-top: 39px;
     }
 }
 
@@ -321,6 +370,7 @@ button {
     line-height: 32px;
     font-weight: 400;
     letter-spacing: -1px;
+    color: var(--gray-900);
 
     @media (max-width: 1439px) {
         align-items: baseline;
@@ -363,7 +413,7 @@ span {
     }
 
     @media (max-width: 767px) {
-        margin-top: 12px;
+        margin-top: 15px;
     }
 }
 
@@ -420,7 +470,6 @@ span {
 
 .comments-list {
     margin-top: 56px;
-    gap: 16px;
 
     @media (max-width: 1439px) {
         margin-top: 46px;
@@ -433,6 +482,10 @@ span {
     @media (max-width: 767px) {
         margin-top: 32px;
     }
+}
+
+.comments-list-page {
+    gap: 16px;
 }
 
 .comments-item {
@@ -496,6 +549,7 @@ span {
     font-size: 18px;
     line-height: 28px;
     font-weight: 700;
+    color: var(--gray-900);
 
     @media (max-width: 1439px) {
         font-size: 16px;
@@ -508,6 +562,7 @@ span {
     font-size: 14px;
     line-height: 20px;
     font-weight: 300;
+    color: var(--gray-900);
 
     @media (max-width: 1439px) {
         margin-top: 6px;
@@ -542,6 +597,7 @@ span {
     font-size: 14px;
     line-height: 20px;
     font-weight: 300;
+    color: var(--gray-900);
 
     @media (max-width: 1439px) {
         margin-top: 16px;
@@ -590,10 +646,10 @@ span {
 
 .partner-list {
     margin-top: 64px;
-    gap: 48px;
+    gap: 64px;
 
     @media (max-width: 1919px) {
-        gap: 52px;
+        gap: 56px;
     }
 
     @media (max-width: 1439px) {
@@ -603,6 +659,9 @@ span {
     @media (max-width: 1023px) {
         flex-direction: column;
         gap: 16px;
+    }
+
+    @media (max-width: 767px) {
         margin-top: 32px;
     }
 }
@@ -629,6 +688,7 @@ span {
 
 .partner-description {
     font-weight: 400;
+    color: var(--gray-700);
 
     @media (max-width: 1919px) {
         margin-top: 12px;
@@ -641,11 +701,11 @@ span {
 
     @media (max-width: 1439px) {
         width: 238px;
-        margin-top: 32px;
     }
 
     @media (max-width: 1023px) {
         width: 202px;
+        margin-top: 32px;
     }
 
     @media (max-width: 767px) {
@@ -659,7 +719,7 @@ span {
     width: 906px;
     height: 510px;
     margin-top: 64px;
-    border-radius: 20px;
+    border-radius: 16px;
     background-color: var(--gray-100);
     background-image: url("./images/subtract.png");
     background-repeat: no-repeat;
@@ -712,11 +772,21 @@ span {
     }
 }
 
+.forum-title {
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+}
+
 .forum-list {
     flex-direction: column;
     gap: 24px;
     width: 100%;
     margin-top: 48px;
+
+    @media (max-width: 767px) {
+        margin-top: 32px;
+    }
 }
 
 .forum-item {
@@ -768,6 +838,18 @@ span {
 
     @media (max-width: 767px) {
         padding: 0 12px;
+    }
+}
+
+.footer-container {
+    padding-top: 88px;
+
+    @media (max-width: 1439px) {
+        padding-top: 64px;
+    }
+
+    @media (max-width: 767px) {
+        padding-top: 48px;
     }
 }
 
@@ -823,6 +905,7 @@ span {
 
 .footer-data {
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
     width: 652px;
 
@@ -848,6 +931,7 @@ span {
 .data-push {
     max-width: 318px;
     width: 100%;
+    height: 48px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
@@ -888,6 +972,12 @@ span {
     font-weight: 400;
     text-decoration: underline;
     color: white;
+    cursor: pointer;
+
+    @media (max-width: 1023px) {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
 
 .footer-bottom {
@@ -947,21 +1037,23 @@ span {
 }
 
 .text-field {
-    width: 312px;
-    height: 48px;
+    width: 292px;
+    height: 22px;
+    padding: 12px;
     border-radius: 8px;
     border: 1px solid var(--gray-200);
 
     @media (max-width: 1919px) {
-        width: 258px;
+        width: 238px;
     }
 
     @media (max-width: 1439px) {
-        width: 242px;
-        height: 36px;
+        width: 222px;
+        height: 18px;
+        padding: 10px 12px;
     }
 
     @media (max-width: 767px) {
-        width: 290px;
+        width: 270px;
     }
 }
