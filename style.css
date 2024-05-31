@@ -71,6 +71,7 @@ button {
     font-weight: 700;
     text-decoration: none;
     border-radius: 10px;
+    box-sizing: border-box;
     cursor: pointer;
     color: white;
     background-color: var(--primary-500-color);
@@ -145,7 +146,7 @@ button {
         flex-direction: column;
         gap: 16px;
         width: calc(100% - 25px);
-        padding: 12px;
+        padding: 8px 12px 20px;
         position: absolute;
         background-color: white;
     }
@@ -572,6 +573,10 @@ span {
 }
 
 .comments-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     padding-left: 72px;
 
     @media (max-width: 1439px) {
@@ -649,6 +654,7 @@ span {
     gap: 64px;
 
     @media (max-width: 1919px) {
+        margin-top: 56px;
         gap: 56px;
     }
 
@@ -696,15 +702,29 @@ span {
 }
 
 .partner-bottom-btn {
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
     margin-top: 48px;
     width: 318px;
+    padding: 0 40px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    background-color: var(--primary-500-color);
 
     @media (max-width: 1439px) {
-        width: 238px;
+        width: 237px;
     }
 
     @media (max-width: 1023px) {
-        width: 202px;
+        width: 201px;
         margin-top: 32px;
     }
 
@@ -719,7 +739,7 @@ span {
     width: 906px;
     height: 510px;
     margin-top: 64px;
-    border-radius: 16px;
+    border-radius: 20px;
     background-color: var(--gray-100);
     background-image: url("./images/subtract.png");
     background-repeat: no-repeat;
@@ -730,6 +750,7 @@ span {
         width: 836px;
         height: 470px;
         margin-top: 56px;
+        border-radius: 16px;
     }
 
     @media (max-width: 1023px) {
@@ -742,6 +763,7 @@ span {
         width: 100%;
         max-height: 166px;
         margin-top: 32px;
+        border-radius: 12px;
     }
 }
 
@@ -802,6 +824,7 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .forum-item-text {
@@ -814,10 +837,10 @@ span {
         font-size: 16px;
         line-height: 24px;
     }
-}
 
-.forum-show {
-    cursor: pointer;
+    @media (max-width: 767px) {
+        margin-right: 16px;
+    }
 }
 
 .forum-content {
@@ -951,7 +974,7 @@ span {
     }
 
     @media (max-width: 767px) {
-        max-width: 296px;
+        max-width: 100%;
     }
 }
 
@@ -1018,10 +1041,6 @@ span {
     cursor: pointer;
 }
 
-.label-field {
-    max-width: 318px;
-}
-
 .footer-input {
     flex-wrap: wrap;
     gap: 16px;
@@ -1037,25 +1056,30 @@ span {
 }
 
 .text-field {
-    width: 292px;
-    height: 22px;
+    width: 318px;
+    height: 48px;
     padding: 12px;
+    box-sizing: border-box;
     border-radius: 8px;
     border: 1px solid var(--gray-200);
 
     @media (max-width: 1919px) {
-        width: 238px;
+        width: 264px;
     }
 
     @media (max-width: 1439px) {
-        width: 222px;
-        height: 18px;
+        width: 248px;
+        height: 40px;
         padding: 10px 12px;
     }
 
     @media (max-width: 767px) {
-        width: 270px;
+        width: 100%;
     }
+}
+
+.text-field:focus {
+    outline: none;
 }
 
 .modal {

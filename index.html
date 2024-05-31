@@ -344,7 +344,7 @@
                             </p>
                         </div>
                     </div>
-                    <button class="partner-bottom-btn">Стать промоутером</button>
+                    <a class="partner-bottom-btn d-flex" href="https://kb.moneyback.ru/auth" target="_blank">Стать промоутером</a>
                     <div onclick="play()">
                         <video class="partner-video" id="video"
                                src="./video/testVideo.mp4"
@@ -365,15 +365,20 @@
                             Ответы на частые вопросы
                         </h2>
                         <div class="forum-list d-flex">
-                            <div class="forum-item">
+                            <div class="forum-item" onclick="showOne()">
                                 <div class="forum-container">
                                     <div class="forum-item-text">
                                         Сколько процентов комиссии получает промоутер за разные категории товаров?
                                     </div>
-                                    <div class="forum-show" onclick="showOne()">
+                                    <div class="forum-show">
                                         <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
+                                             xmlns="http://www.w3.org/2000/svg" id="downOne">
                                             <path d="M16.5 1.25L9 8.75L1.5 1.25" stroke="#373C50" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg" id="upOne" style="display: none">
+                                            <path d="M1.5 8.75L9 1.25L16.5 8.75" stroke="#373C50" stroke-width="1.5"
                                                   stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                     </div>
@@ -395,17 +400,23 @@
                                     Здоровой может быть даже выпечка, если она приготовлена на пару.
                                 </div>
                             </div>
-                            <div class="forum-item">
+                            <div class="forum-item" onclick="showTwo()">
                                 <div class="forum-container">
                                     <div class="forum-item-text">
                                         Какие документы требуются для подключения к программе?
                                     </div>
-                                    <div class="forum-show" onclick="showTwo()">
+                                    <div class="forum-show">
                                         <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
+                                             xmlns="http://www.w3.org/2000/svg" id="downTwo">
                                             <path d="M16.5 1.25L9 8.75L1.5 1.25" stroke="#373C50" stroke-width="1.5"
                                                   stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
+                                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg" id="upTwo" style="display: none">
+                                            <path d="M1.5 8.75L9 1.25L16.5 8.75" stroke="#373C50" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+
                                     </div>
                                 </div>
                                 <div class="forum-content" id="two" style="display: none">
@@ -425,17 +436,23 @@
                                     Здоровой может быть даже выпечка, если она приготовлена на пару.
                                 </div>
                             </div>
-                            <div class="forum-item">
+                            <div class="forum-item" onclick="showThree()">
                                 <div class="forum-container">
                                     <div class="forum-item-text">
                                         Сколько времени занимает рассмотрение заявки на подключение?
                                     </div>
-                                    <div class="forum-show" onclick="showThree()">
+                                    <div class="forum-show">
                                         <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
+                                             xmlns="http://www.w3.org/2000/svg" id="downThree">
                                             <path d="M16.5 1.25L9 8.75L1.5 1.25" stroke="#373C50" stroke-width="1.5"
                                                   stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
+                                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg" id="upThree" style="display: none">
+                                            <path d="M1.5 8.75L9 1.25L16.5 8.75" stroke="#373C50" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+
                                     </div>
                                 </div>
                                 <div class="forum-content" id="three" style="display: none">
@@ -455,17 +472,23 @@
                                     Здоровой может быть даже выпечка, если она приготовлена на пару.
                                 </div>
                             </div>
-                            <div class="forum-item">
+                            <div class="forum-item" onclick="showFour()">
                                 <div class="forum-container">
                                     <div class="forum-item-text">
                                         Какими способами перечисляются средства на счет промоутера?
                                     </div>
-                                    <div class="forum-show" onclick="showFour()">
+                                    <div class="forum-show">
                                         <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
+                                             xmlns="http://www.w3.org/2000/svg" id="downFour">
                                             <path d="M16.5 1.25L9 8.75L1.5 1.25" stroke="#373C50" stroke-width="1.5"
                                                   stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
+                                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg" id="upFour" style="display: none">
+                                            <path d="M1.5 8.75L9 1.25L16.5 8.75" stroke="#373C50" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+
                                     </div>
                                 </div>
                                 <div class="forum-content" id="four" style="display: none">
@@ -485,17 +508,23 @@
                                     Здоровой может быть даже выпечка, если она приготовлена на пару.
                                 </div>
                             </div>
-                            <div class="forum-item" v-for="commentItem in getUsers">
+                            <div class="forum-item" onclick="showFive()">
                                 <div class="forum-container">
                                     <div class="forum-item-text">
                                         Какие инструменты может использовать промоутер для привлечения клиентов?
                                     </div>
-                                    <div class="forum-show" onclick="showFive()">
+                                    <div class="forum-show">
                                         <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
+                                             xmlns="http://www.w3.org/2000/svg" id="downFive">
                                             <path d="M16.5 1.25L9 8.75L1.5 1.25" stroke="#373C50" stroke-width="1.5"
                                                   stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
+                                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg" id="upFive" style="display: none">
+                                            <path d="M1.5 8.75L9 1.25L16.5 8.75" stroke="#373C50" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+
                                     </div>
                                 </div>
                                 <div class="forum-content" id="five" style="display: none">
@@ -515,17 +544,23 @@
                                     Здоровой может быть даже выпечка, если она приготовлена на пару.
                                 </div>
                             </div>
-                            <div class="forum-item">
+                            <div class="forum-item" onclick="showSix()">
                                 <div class="forum-container">
                                     <div class="forum-item-text">
                                         Сколько процентов комиссии получает промоутер за разные категории товаров?
                                     </div>
-                                    <div class="forum-show" onclick="showSix()">
+                                    <div class="forum-show">
                                         <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
+                                             xmlns="http://www.w3.org/2000/svg" id="downSix">
                                             <path d="M16.5 1.25L9 8.75L1.5 1.25" stroke="#373C50" stroke-width="1.5"
                                                   stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
+                                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg" id="upSix" style="display: none">
+                                            <path d="M1.5 8.75L9 1.25L16.5 8.75" stroke="#373C50" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+
                                     </div>
                                 </div>
                                 <div class="forum-content" id="six" style="display: none">
@@ -605,7 +640,8 @@
             <div class="modal-window">
                 <div class="modal-close" onclick="pushForm()">
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 9L9 1M1 1L9 9" stroke="#9DA2B6" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1 9L9 1M1 1L9 9" stroke="#9DA2B6" stroke-width="1.2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
                     </svg>
                 </div>
                 <div class="modal-title">Заявка успешно отправлена!</div>
