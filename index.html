@@ -9,6 +9,8 @@
           rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="color.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.min.js"></script>
     <title>Title</title>
 </head>
 <body>
@@ -45,10 +47,12 @@
     <main>
         <section id="hero">
             <div class="hero-content">
-                <img class="hero-image" src="./images/hero.png" alt="hero" style="width: 100%">
-                <img class="hero-image-height" src="./images/hero1440.png" alt="hero">
-                <img class="hero-image-media" src="./images/hero-media.png" alt="hero">
-                <img class="hero-image-mobile" src="./images/hero-mobile.png" alt="hero">
+                <div class="hero-orange"></div>
+                <div class="hero-block">
+                    <h1 class="hero-title">Единая платформа для рекомендации компании Кухни Беларуси</h1>
+                    <p class="hero-description">Уникальный инструмент для сотрудничества и <span>заработка</span></p>
+                </div>
+                <img class="hero-case" src="./images/case.png" alt="">
             </div>
         </section>
 
@@ -63,7 +67,7 @@
                             <img class="articles-image" src="./images/discount_isometric1.png" alt="image">
                             <div class="articles-item-block">
                                 <div class="articles-block-title d-flex">
-                                    Вознаграждение <span>до 7%</span> от чека
+                                    Вознаграждение <span class="articles-span">до 7%</span> от чека
                                 </div>
                                 <p class="articles-block-description">
                                     В зависимости от категории товара, а так же акционных предложений вы сможете
@@ -78,7 +82,7 @@
                         <div class="articles-item transfer d-flex">
                             <div class="articles-item-block">
                                 <div class="articles-block-title d-flex">
-                                    Перечисление средств <span>еженедельно</span>
+                                    Перечисление средств <span class="articles-span">еженедельно</span>
                                 </div>
                                 <p class="articles-block-description">
                                     Жизнь в большом городе зачастую накладывает на людей очень много обязательств,
@@ -96,7 +100,7 @@
                             <img class="articles-image" src="./images/discount_isometric3.png" alt="image">
                             <div class="articles-item-block">
                                 <div class="articles-block-title d-flex">
-                                    Удобная и полная <span>статистика</span>
+                                    Удобная и полная <span class="articles-span">статистика</span>
                                 </div>
                                 <p class="articles-block-description">
                                     С целью снизить число людей с ожирением рестораны быстрого питания и сети
@@ -602,7 +606,7 @@
                         <div class="footer-data d-flex">
                             <div class="footer-input d-flex">
                                 <label class="label-field" for="name">
-                                    <input class="text-field" id="name" type="text" placeholder="Имя">
+                                    <input class="text-field" id="name" type="text" placeholder="Имя" >
                                 </label>
                                 <label class="label-field" for="tel">
                                     <input class="text-field" id="tel" type="tel" placeholder="+7 (999) 999 - 99 - 99">
@@ -655,6 +659,8 @@
     </footer>
     <script src="index.js"></script>
 </div>
+<script>
 
+</script>
 </body>
 </html>

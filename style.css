@@ -4,6 +4,11 @@ body {
     font-family: Raleway, sans-serif;
 }
 
+h1 {
+    margin: 0;
+    letter-spacing: -1px;
+}
+
 h2 {
     margin: 0;
     font-size: 48px;
@@ -204,6 +209,99 @@ button {
 
 /*Hero*/
 
+.hero-content {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    box-sizing: border-box;
+    padding: 264px 300px 268px 300px;
+    background: linear-gradient(182.64deg, rgba(255, 199, 51, 0.64) -26.47%, #FDDE8C 56.61%, #FFFFFF 98.25%);
+    overflow: hidden;
+
+    @media (max-width: 1919px) {
+        padding-left: 208px;
+    }
+
+    @media (max-width: 1439px) {
+        height: 640px;
+        padding: 208px 390px 252px 28px;
+    }
+
+    @media (max-width: 1023px) {
+        height: 560px;
+        padding: 165px 164px 215px 24px;
+    }
+
+    @media (max-width: 767px) {
+        height: 480px;
+        padding: 120px 12px 148px;
+    }
+}
+
+.hero-title {
+
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 700;
+
+    @media (max-width: 1439px) {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+
+.hero-description {
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -1px;
+
+    @media (max-width: 1439px) {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 16px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+.hero-case {
+    position: absolute;
+    right: 160px;
+    top: 0;
+    width: 800px;
+
+    @media (max-width: 1919px) {
+        right: -150px;
+    }
+
+    @media (max-width: 1439px) {
+        width: 640px;
+        right: -120px;
+    }
+
+    @media (max-width: 1023px) {
+        width: 560px;
+        right: -280px;
+    }
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.hero-block {
+    max-width: 763px;
+}
+
 .hero-image {
     @media (max-width: 1919px) {
         display: none;
@@ -388,7 +486,7 @@ button {
     }
 }
 
-span {
+.articles-span {
     font-size: 36px;
     line-height: 44px;
     font-weight: 700;
@@ -721,16 +819,25 @@ span {
 
     @media (max-width: 1439px) {
         width: 237px;
+        height: 48px;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     @media (max-width: 1023px) {
         width: 201px;
+        height: 40px;
+        padding: 0 32px;
         margin-top: 32px;
+        font-size: 14px;
+        line-height: 20px;
     }
 
     @media (max-width: 767px) {
         max-width: 296px;
         width: 100%;
+        height: 36px;
+        line-height: 16px;
         margin-top: 24px;
     }
 }

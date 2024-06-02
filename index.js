@@ -175,18 +175,24 @@ const pushForm = () => {
         telField.style.borderColor = null;
     } else {
         if (!nameField.value) {
-            nameField.style.borderColor = 'red';
         } else {
             nameField.style.borderColor = null;
         }
         if (!telField.value) {
-            telField.style.borderColor = 'red';
         } else {
             telField.style.borderColor = null;
         }
     }
 
 }
+
+$(document).ready(function(){
+    $('#tel').inputmask("+7 (999) 999-99-99");
+});
+
+
+
+
 
 
 
