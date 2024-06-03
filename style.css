@@ -215,6 +215,7 @@ button {
     height: 800px;
     box-sizing: border-box;
     padding: 264px 300px 268px 300px;
+    z-index: -1;
     background: linear-gradient(182.64deg, rgba(255, 199, 51, 0.64) -26.47%, #FDDE8C 56.61%, #FFFFFF 98.25%);
     overflow: hidden;
 
@@ -270,6 +271,70 @@ button {
         margin-top: 16px;
         font-size: 18px;
         line-height: 24px;
+    }
+}
+
+.hero-vector {
+    position: absolute;
+    width: 150px;
+    top: -12px;
+    left: -23px;
+
+    @media (max-width: 1439px) {
+        width: 128px;
+        left: -19px;
+        top: -11px;
+    }
+}
+
+.hero-orange {
+    position: absolute;
+    top: -309px;
+    left: -230px;
+    filter: blur(135px);
+    height: 776px;
+    width: 776px;
+    background-color: #F87F52;
+    z-index: -1;
+
+    @media (max-width: 1439px) {
+        left: -456px;
+    }
+
+    @media (max-width: 767px) {
+        width: 496px;
+        top: -426px;
+        left: -346px;
+        filter: blur(90px);
+    }
+}
+
+.hero-yellow {
+    position: absolute;
+    width: 841px;
+    height: 614px;
+    bottom: -364px;
+    right: -65px;
+    rotate: 16deg;
+    filter: blur(130px);
+    background-color: #FFC733;
+    z-index: -1;
+    
+    @media (max-width: 1919px) {
+        right: -452px;
+    }
+
+    @media (max-width: 1439px) {
+        right: -538px;
+    }
+
+    @media (max-width: 1023px) {
+        right: -604px;
+    }
+
+    @media (max-width: 767px) {
+        width: 600px;
+        height: 438px;
     }
 }
 
@@ -555,6 +620,9 @@ button {
     background-color: white;
 
     @media (max-width: 1439px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 40px;
         height: 40px;
     }
