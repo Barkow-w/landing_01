@@ -859,11 +859,17 @@ button {
 }
 
 .partner-description {
+    max-width: 200px;
     font-weight: 400;
     color: var(--gray-700);
 
     @media (max-width: 1919px) {
+        max-width: 184px;
         margin-top: 12px;
+    }
+
+    @media (max-width: 1023px) {
+        max-width: 242px;
     }
 }
 

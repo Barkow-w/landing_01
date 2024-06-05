@@ -25,4 +25,9 @@
     --hero-two-color: #D2E9F8;
 
     --gradient-color: linear-gradient(182.64deg, rgba(241, 248, 253, 0.64) -26.47%, #F1F8FD 56.61%, #FFFFFF 98.25%);
+
+    .footer-bg {
+        background-color: var(--primary-900-color);
+    }
+
 }
