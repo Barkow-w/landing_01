@@ -95,30 +95,30 @@ button {
     }
 }
 
-.container {
-    margin: 0 auto;
-    padding-top: 148px;
-    width: 1320px;
+/*.container {*/
+/*    margin: 0 auto;*/
+/*    padding-top: 148px;*/
+/*    width: 1320px;*/
 
-    @media (max-width: 1919px) {
-        width: 1024px;
-    }
+/*    @media (max-width: 1919px) {*/
+/*        width: 1024px;*/
+/*    }*/
 
-    @media (max-width: 1439px) {
-        width: 968px;
-        padding: 120px 0 0;
-    }
+/*    @media (max-width: 1439px) {*/
+/*        width: 968px;*/
+/*        padding: 120px 0 0;*/
+/*    }*/
 
-    @media (max-width: 1023px) {
-        padding-top: 120px;
-        width: 720px;
-    }
+/*    @media (max-width: 1023px) {*/
+/*        padding-top: 120px;*/
+/*        width: 720px;*/
+/*    }*/
 
-    @media (max-width: 767px) {
-        width: 100%;
-        padding-top: 88px;
-    }
-}
+/*    @media (max-width: 767px) {*/
+/*        width: 100%;*/
+/*        padding-top: 88px;*/
+/*    }*/
+/*}*/
 
 .d-flex {
     display: flex;
@@ -127,29 +127,20 @@ button {
 /*Auth*/
 
 .auth-container {
-    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
     padding: 26px 24px 26px 28px;
-    width: 1320px;
-
-    @media (max-width: 1919px) {
-        width: 1024px;
-    }
-
+    max-width: 100%;
 
     @media (max-width: 1439px) {
         padding: 18px 24px 18px 28px;
-        width: 968px;
     }
 
     @media (max-width: 1023px) {
         padding: 18px 24px;
-        width: 720px;
     }
 
     @media (max-width: 767px) {
-        width: 100%;
         padding: 16px 12px;
     }
 }
@@ -230,20 +221,20 @@ button {
 .container {
     margin: 0 auto;
     padding-top: 148px;
-    width: 1320px;
+    max-width: 1320px;
 
     @media (max-width: 1919px) {
-        width: 1024px;
+        max-width: 1024px;
     }
 
     @media (max-width: 1439px) {
-        width: 968px;
+        max-width: 968px;
         padding: 120px 0 0;
     }
 
     @media (max-width: 1023px) {
         padding-top: 120px;
-        width: 720px;
+        max-width: 720px;
     }
 
     @media (max-width: 767px) {
@@ -420,6 +411,14 @@ button {
 
 .hero-block {
     max-width: 763px;
+    
+    @media (max-width: 1439px) {
+        max-width: 580px;
+    }
+    
+    @media (max-width: 767px) {
+
+    }
 }
 
 .hero-image {
