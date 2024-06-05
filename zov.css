@@ -30,4 +30,8 @@
         background-color: var(--primary-900-color);
     }
 
+    .auth-logo {
+        background-image: url("./images/logo/zov.png");
+    }
+
 }

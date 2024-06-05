@@ -157,8 +157,16 @@ button {
     }
 }
 
+.path {
+    stroke: var(--primary-500-color);
+}
+
 .auth-logo {
+    width: 197px;
     height: 46px;
+    background-image: url("./images/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     @media (max-width: 1023px) {
         height: 36px;
     }
@@ -263,6 +271,7 @@ button {
     letter-spacing: -1px;
 
     @media (max-width: 1439px) {
+        max-width: 400px;
         font-size: 20px;
         line-height: 24px;
     }
@@ -278,11 +287,11 @@ button {
     position: absolute;
     width: 150px;
     top: -12px;
-    left: -23px;
+    left: -58px;
 
     @media (max-width: 1439px) {
         width: 128px;
-        left: -19px;
+        left: -50px;
         top: -11px;
     }
 }
@@ -841,14 +850,17 @@ button {
 .partner-item {
     display: flex;
     align-items: center;
+    gap: 4px;
 
     @media (max-width: 1919px) {
         flex-direction: column;
         align-items: flex-start;
+        gap: 0;
     }
 
     @media (max-width: 1023px) {
         flex-direction: row;
+        gap: 8px;
     }
 }
 
@@ -859,17 +871,17 @@ button {
 }
 
 .partner-description {
-    max-width: 200px;
+    width: 200px;
     font-weight: 400;
     color: var(--gray-700);
 
     @media (max-width: 1919px) {
-        max-width: 184px;
+        width: 184px;
         margin-top: 12px;
     }
 
     @media (max-width: 1023px) {
-        max-width: 242px;
+        width: 242px;
     }
 }
 
