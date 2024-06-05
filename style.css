@@ -216,7 +216,7 @@ button {
     box-sizing: border-box;
     padding: 264px 300px 268px 300px;
     z-index: -1;
-    background: linear-gradient(182.64deg, rgba(255, 199, 51, 0.64) -26.47%, #FDDE8C 56.61%, #FFFFFF 98.25%);
+    background: var(--gradient-color);
     overflow: hidden;
 
     @media (max-width: 1919px) {
@@ -294,7 +294,7 @@ button {
     filter: blur(135px);
     height: 776px;
     width: 776px;
-    background-color: #F87F52;
+    background-color: var(--hero-one-color);
     z-index: -1;
 
     @media (max-width: 1439px) {
@@ -317,7 +317,7 @@ button {
     right: -65px;
     rotate: 16deg;
     filter: blur(130px);
-    background-color: #FFC733;
+    background-color: var(--hero-two-color);
     z-index: -1;
     
     @media (max-width: 1919px) {
@@ -1019,11 +1019,14 @@ button {
 }
 
 .forum-content {
+    display: none;
     margin-top: 12px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
 }
+
+
 
 /*Footer*/
 
@@ -1274,16 +1277,21 @@ button {
 }
 
 .modal-window {
-    position: absolute;
-    top: 200px;
-    left: calc(44% - 75px);
     max-width: 358px;
+    margin: 200px auto 0;
     padding: 36px;
     border-radius: 12px;
     background-color: #FFFFFF;
 
-    @media (max-width: 1280px) {
-        left: 35%;
+    @media (max-width: 1439px) {
+        max-width: 330px;
+        padding: 32px;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 264px;
+        margin-top: 160px;
+        padding: 24px 16px;
     }
 }
 
@@ -1291,7 +1299,18 @@ button {
     font-size: 24px;
     line-height: 32px;
     font-weight: 700;
+    letter-spacing: -1px;
     color: var(--gray-900);
+
+    @media (max-width: 1439px) {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 18px;
+        line-height: 22px;
+    }
 }
 
 .modal-text {
@@ -1300,6 +1319,11 @@ button {
     line-height: 24px;
     font-weight: 400;
     color: var(--gray-700);
+
+    @media (max-width: 1439px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 
 .modal-btn {

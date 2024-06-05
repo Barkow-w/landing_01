@@ -20,4 +20,9 @@
     --primary-200-color: #FEDABA;
     --primary-100-color: #FEEFDC;
     --primary-050-color: #FFF7EE;
+
+    --hero-one-color: #F87F52;
+    --hero-two-color: #FFC733;
+
+    --gradient-color:  linear-gradient(182.64deg, rgba(255, 199, 51, 0.64) -26.47%, #FDDE8C 56.61%, #FFFFFF 98.25%);
 }
