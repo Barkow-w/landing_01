@@ -277,6 +277,7 @@ button {
     }
 
     @media (max-width: 767px) {
+        max-width: 360px;
         margin-top: 16px;
         font-size: 18px;
         line-height: 24px;
@@ -285,14 +286,19 @@ button {
 
 .hero-vector {
     position: absolute;
-    width: 150px;
+    width: 160px;
     top: -12px;
-    left: -58px;
+    left: -156px;
 
     @media (max-width: 1439px) {
         width: 128px;
-        left: -50px;
+        left: -127px;
         top: -11px;
+    }
+
+    @media (max-width: 1023px) {
+        width: 120px;
+        left: -117px;
     }
 }
 
@@ -665,6 +671,7 @@ button {
 }
 
 .comments-item {
+    box-sizing: border-box;
     flex-direction: column;
     max-width: 652px;
     padding: 40px;
