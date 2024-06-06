@@ -1,23 +1,82 @@
 
 const back = () => {
-    let pageOne = document.getElementById('pageOne');
-    let pageTwo = document.getElementById('pageTwo');
+    let itemOne = document.getElementById('commentOne');
+    let itemTwo = document.getElementById('commentTwo');
+    let itemThree = document.getElementById('commentThree');
+    let itemFour = document.getElementById('commentFour');
 
-    if (pageTwo.style.display === 'flex') {
-        pageOne.style.display = 'flex'
-        pageTwo.style.display = 'none'
+    if (itemTwo.style.display === 'none') {
+        itemOne.style.display = 'flex'
+        itemTwo.style.display = 'flex'
+        itemThree.style.display = 'none'
+        itemFour.style.display = 'none'
     }
 }
 
 const next = () => {
-    let pageOne = document.getElementById('pageOne');
-    let pageTwo = document.getElementById('pageTwo');
+    let list = document.getElementById('comment-list')
+    let itemOne = document.getElementById('commentOne');
+    let itemTwo = document.getElementById('commentTwo');
+    let itemThree = document.getElementById('commentThree');
+    let itemFour = document.getElementById('commentFour');
 
-    if (pageTwo.style.display === 'none') {
-        pageOne.style.display = 'none'
-        pageTwo.style.display = 'flex'
+    if (itemThree.style.display === 'none') {
+        itemOne.style.display = 'none'
+        itemTwo.style.display = 'none'
+        itemThree.style.display = 'flex'
+        itemFour.style.display = 'flex'
     }
 }
+
+
+const updateSelection = () => {
+    let active = document.querySelector('#comment-list > div.active')
+
+    if( active ) active.classList.remove('active');
+
+    items[index].classList.add('active');
+}
+
+const pageSelection = () => {
+    let active = document.querySelector('#comment-list > div.active')
+
+    if( active ) active.classList.remove('active');
+
+    items[index].classList.add('active');
+}
+
+
+const btn = {
+    next: document.getElementById('next'),
+    prev: document.getElementById('prev'),
+    nextList: document.getElementById('nextList'),
+    prevList: document.getElementById('prevList')
+}
+
+const items = document.querySelectorAll('#comment-list > div');
+let index = 0
+
+btn.next.addEventListener('click', function () {
+    index = (index + 1) % items.length;
+    updateSelection();
+})
+
+btn.prev.addEventListener('click', function() {
+    index = (index + items.length - 1) % items.length;
+    updateSelection();
+});
+
+btn.nextList.addEventListener('click', function () {
+    index = (index + 1) % items.length;
+    pageSelection();
+})
+
+btn.prevList.addEventListener('click', function() {
+    index = (index + items.length - 1) % items.length;
+    pageSelection();
+});
+
+
 
 const advantages = () => {
     let section = document.getElementById('articles');

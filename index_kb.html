@@ -121,7 +121,7 @@
                         <h2 class="comments-title">
                             Что говорят о платформе промоутеры?
                         </h2>
-                        <div class="comments-slider d-flex">
+                        <div class="comments-slider main-clone d-flex">
                             <button class="comments-btn" onclick="back()">
                                 <svg class="comments-btn-icon" width="10" height="18" viewBox="0 0 10 18" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -137,10 +137,27 @@
                                 </svg>
                             </button>
                         </div>
+                        <div class="comments-slider media-clone d-flex">
+                            <button class="comments-btn" id="prevList">
+                                <svg class="comments-btn-icon" width="10" height="18" viewBox="0 0 10 18" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.75 16.5L1.25 9L8.75 1.5" stroke="#373C50" stroke-width="1.5"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <button class="comments-btn" id="nextList">
+                                <svg class="comments-btn-icon" width="10" height="18" viewBox="0 0 10 18" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.25 1.5L8.75 9L1.25 16.5" stroke="#373C50" stroke-width="1.5"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="comments-list" id="comment-list">
-                        <div class="comments-list-page d-flex" id="pageOne">
-                            <div class="comments-item d-flex">
+                    <div class="comments-list d-flex" id="comment-list">
+<!--                        <div class="comments-list-page d-flex" id="pageOne">-->
+
+                            <div class="comments-item active" id="commentOne">
                                 <div class="comments-avatar d-flex">
                                     <img class="comments-icon" src="./images/avatar1.png" alt="avatar">
                                     <div class="comments-avatar-info">
@@ -158,7 +175,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="comments-item comments-scroll d-flex">
+
+                            <div class="comments-item" id="commentTwo">
                                 <div class="comments-avatar d-flex">
                                     <img class="comments-icon" src="./images/avatar2.png" alt="avatar">
                                     <div class="comments-avatar-info">
@@ -179,9 +197,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="comments-list-page" style="display: none" id="pageTwo">
-                            <div class="comments-item d-flex">
+
+<!--                        </div>-->
+<!--                        <div class="comments-list-page" style="display: none" id="pageTwo">-->
+                            <div class="comments-item media" style="display: none" id="commentThree">
                                 <div class="comments-avatar d-flex">
                                     <img class="comments-icon" src="./images/avatar1.png" alt="avatar">
                                     <div class="comments-avatar-info">
@@ -201,7 +220,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="comments-item comments-scroll d-flex">
+                            <div class="comments-item media" style="display: none" id="commentFour">
                                 <div class="comments-avatar d-flex">
                                     <img class="comments-icon" src="./images/avatar2.png" alt="avatar">
                                     <div class="comments-avatar-info">
@@ -220,17 +239,19 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+<!--                        </div>-->
+
+
                     </div>
                     <div class="comments-slider bottom d-flex">
-                        <button class="comments-btn" onclick="back()">
+                        <button class="comments-btn" id="prev">
                             <svg class="comments-btn-icon" width="10" height="18" viewBox="0 0 10 18" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.75 16.5L1.25 9L8.75 1.5" stroke="#373C50" stroke-width="1.5"
                                       stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
-                        <button class="comments-btn" onclick="next()">
+                        <button class="comments-btn" id="next">
                             <svg class="comments-btn-icon" width="10" height="18" viewBox="0 0 10 18" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1.25 1.5L8.75 9L1.25 16.5" stroke="#373C50" stroke-width="1.5"
