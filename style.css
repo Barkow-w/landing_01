@@ -638,6 +638,19 @@ button {
 
 /*Comments*/
 
+.comments-bg {
+    width: 56px;
+    height: 56px;
+    margin-right: 16px;
+    border-radius: 50%;
+    background-color: #aaabae;
+    
+    @media (max-width: 1439px) {
+        width: 48px;
+        height: 48px;
+    }
+}
+
 .comments-content {
     @media (max-width: 767px) {
         padding: 0 12px;
