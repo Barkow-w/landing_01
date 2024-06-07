@@ -320,6 +320,7 @@ button {
     width: 160px;
     top: -12px;
     left: -156px;
+    z-index: -1;
 
     @media (max-width: 1439px) {
         width: 128px;

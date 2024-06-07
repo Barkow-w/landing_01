@@ -122,7 +122,7 @@
                         <h2 class="comments-title">
                             Что говорят о платформе промоутеры?
                         </h2>
-                        <div class="comments-slider d-flex">
+                        <div class="comments-slider main-clone d-flex">
                             <button class="comments-btn" onclick="back()">
                                 <svg class="comments-btn-icon" width="10" height="18" viewBox="0 0 10 18" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -138,100 +138,121 @@
                                 </svg>
                             </button>
                         </div>
+                        <div class="comments-slider media-clone d-flex">
+                            <button class="comments-btn" id="prevList">
+                                <svg class="comments-btn-icon" width="10" height="18" viewBox="0 0 10 18" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.75 16.5L1.25 9L8.75 1.5" stroke="#373C50" stroke-width="1.5"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <button class="comments-btn" id="nextList">
+                                <svg class="comments-btn-icon" width="10" height="18" viewBox="0 0 10 18" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.25 1.5L8.75 9L1.25 16.5" stroke="#373C50" stroke-width="1.5"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="comments-list" id="comment-list">
-                        <div class="comments-list-page d-flex" id="pageOne">
-                            <div class="comments-item d-flex">
-                                <div class="comments-avatar d-flex">
-                                    <img class="comments-icon" src="./images/avatar1.png" alt="avatar">
-                                    <div class="comments-avatar-info">
-                                        <div class="comments-avatar-name">Веб-мастер</div>
-                                        <div class="comments-avatar-text">Сотрудничает около 6 месяцев</div>
-                                    </div>
-                                </div>
-                                <div class="comments-text">
-                                    <p class="comments-description">
-                                        Рекомендую партнерку! Простой интерфейс, видно всех клиентов,
-                                        быстрый вывод бонусных средств. Были пара нюансов, но тех. поддержка отвечает быстро, все решилось.
-                                    </p>
-                                    <div class="comments-date">
-                                        12 марта 2024
-                                    </div>
+                    <div class="comments-list d-flex" id="comment-list">
+                        <!--                        <div class="comments-list-page d-flex" id="pageOne">-->
+
+                        <div class="comments-item active" id="commentOne">
+                            <div class="comments-avatar d-flex">
+                                <img class="comments-icon" src="./images/avatar1.png" alt="avatar">
+                                <div class="comments-avatar-info">
+                                    <div class="comments-avatar-name">Веб-мастер</div>
+                                    <div class="comments-avatar-text">Сотрудничает около 6 месяцев</div>
                                 </div>
                             </div>
-                            <div class="comments-item comments-scroll d-flex">
-                                <div class="comments-avatar d-flex">
-                                    <img class="comments-icon" src="./images/avatar2.png" alt="avatar">
-                                    <div class="comments-avatar-info">
-                                        <div class="comments-avatar-name">Дизайнер интерьеров</div>
-                                        <div class="comments-avatar-text">Сотрудничает около 6 месяцев</div>
-                                    </div>
-                                </div>
-                                <div class="comments-text">
-                                    <p class="comments-description">
-                                        Сотрудничаю с компанией уже несколько,
-                                        еще до появления данного сервиса как дизайнер интерьера.
-                                        Хорошее качество продукции, по срокам умещались в 95% заказов, были случаи, когда приезжал брак,
-                                        но личный менеджер помогала все разрешить довольно быстро. С сервисом стало гораздо удобнее,
-                                        видно на каком этапе находятся заказы клиентов, а выплаты стали приходить быстрее.
-                                    </p>
-                                    <div class="comments-date">
-                                        30 марта 2024
-                                    </div>
+                            <div class="comments-text">
+                                <p class="comments-description">
+                                    Рекомендую партнерку! Простой интерфейс, видно всех клиентов,
+                                    быстрый вывод бонусных средств. Были пара нюансов, но тех. поддержка отвечает быстро, все решилось.
+                                </p>
+                                <div class="comments-date">
+                                    12 марта 2024
                                 </div>
                             </div>
                         </div>
-                        <div class="comments-list-page" style="display: none" id="pageTwo">
-                            <div class="comments-item d-flex">
-                                <div class="comments-avatar d-flex">
-                                    <img class="comments-icon" src="./images/avatar1.png" alt="avatar">
-                                    <div class="comments-avatar-info">
-                                        <div class="comments-avatar-name">Бригадир ремонтной компании</div>
-                                        <div class="comments-avatar-text">Сотрудничает около 6 месяцев</div>
-                                    </div>
-                                </div>
-                                <div class="comments-text">
-                                    <p class="comments-description">
-                                        Сотрудничаю с несколькими компаниями по производству мебели и могу сказать, что это пока сама удобная партнерская программа.
-                                        Раньше делился ссылкой, по которой нужно было перейти и оставить заявку, а сейчас просто скидываю в
-                                        WhatsApp номер телефона и имя личному менеджеру и клиенту сразу появляется у меня в кабинете,
-                                        с ним уже связывается сама компания, делают все под ключ, без моего участия. Покупает каждый третий по моей рекомендации.
-                                    </p>
-                                    <div class="comments-date">
-                                        22 апрель 2024
-                                    </div>
+
+                        <div class="comments-item" id="commentTwo">
+                            <div class="comments-avatar d-flex">
+                                <img class="comments-icon" src="./images/avatar2.png" alt="avatar">
+                                <div class="comments-avatar-info">
+                                    <div class="comments-avatar-name">Дизайнер интерьеров</div>
+                                    <div class="comments-avatar-text">Сотрудничает около 6 месяцев</div>
                                 </div>
                             </div>
-                            <div class="comments-item comments-scroll d-flex">
-                                <div class="comments-avatar d-flex">
-                                    <img class="comments-icon" src="./images/avatar2.png" alt="avatar">
-                                    <div class="comments-avatar-info">
-                                        <div class="comments-avatar-name">Инфлюенсер</div>
-                                        <div class="comments-avatar-text">Сотрудничает около 3 месяцев</div>
-                                    </div>
-                                </div>
-                                <div class="comments-text">
-                                    <p class="comments-description">
-                                        Я - мама в декрете, веду небольшой блог про дизайн интерьеров в телеграме,
-                                        раз в месяц делаю рекламу с реферальной ссылкой и получаю по 2-3 заказа в месяц, что является неплохим бонусом.
-                                        Негатива от подписчиков не получала, бонусы выплачивают стабильно.
-                                    </p>
-                                    <div class="comments-date">
-                                        18 май 2024
-                                    </div>
+                            <div class="comments-text">
+                                <p class="comments-description">
+                                    Сотрудничаю с компанией уже несколько,
+                                    еще до появления данного сервиса как дизайнер интерьера.
+                                    Хорошее качество продукции, по срокам умещались в 95% заказов, были случаи, когда приезжал брак,
+                                    но личный менеджер помогала все разрешить довольно быстро. С сервисом стало гораздо удобнее,
+                                    видно на каком этапе находятся заказы клиентов, а выплаты стали приходить быстрее.
+                                </p>
+                                <div class="comments-date">
+                                    30 марта 2024
                                 </div>
                             </div>
                         </div>
+
+                        <!--                        </div>-->
+                        <!--                        <div class="comments-list-page" style="display: none" id="pageTwo">-->
+                        <div class="comments-item media" style="display: none" id="commentThree">
+                            <div class="comments-avatar d-flex">
+                                <img class="comments-icon" src="./images/avatar1.png" alt="avatar">
+                                <div class="comments-avatar-info">
+                                    <div class="comments-avatar-name">Бригадир ремонтной компании</div>
+                                    <div class="comments-avatar-text">Сотрудничает около 6 месяцев</div>
+                                </div>
+                            </div>
+                            <div class="comments-text">
+                                <p class="comments-description">
+                                    Сотрудничаю с несколькими компаниями по производству мебели и могу сказать, что это пока сама удобная партнерская программа.
+                                    Раньше делился ссылкой, по которой нужно было перейти и оставить заявку, а сейчас просто скидываю в
+                                    WhatsApp номер телефона и имя личному менеджеру и клиенту сразу появляется у меня в кабинете,
+                                    с ним уже связывается сама компания, делают все под ключ, без моего участия. Покупает каждый третий по моей рекомендации.
+                                </p>
+                                <div class="comments-date">
+                                    22 апрель 2024
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments-item media" style="display: none" id="commentFour">
+                            <div class="comments-avatar d-flex">
+                                <img class="comments-icon" src="./images/avatar2.png" alt="avatar">
+                                <div class="comments-avatar-info">
+                                    <div class="comments-avatar-name">Инфлюенсер</div>
+                                    <div class="comments-avatar-text">Сотрудничает около 3 месяцев</div>
+                                </div>
+                            </div>
+                            <div class="comments-text">
+                                <p class="comments-description">
+                                    Я - мама в декрете, веду небольшой блог про дизайн интерьеров в телеграме,
+                                    раз в месяц делаю рекламу с реферальной ссылкой и получаю по 2-3 заказа в месяц, что является неплохим бонусом.
+                                    Негатива от подписчиков не получала, бонусы выплачивают стабильно.
+                                </p>
+                                <div class="comments-date">
+                                    18 май 2024
+                                </div>
+                            </div>
+                        </div>
+                        <!--                        </div>-->
+
+
                     </div>
                     <div class="comments-slider bottom d-flex">
-                        <button class="comments-btn" onclick="back()">
+                        <button class="comments-btn" id="prev">
                             <svg class="comments-btn-icon" width="10" height="18" viewBox="0 0 10 18" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.75 16.5L1.25 9L8.75 1.5" stroke="#373C50" stroke-width="1.5"
                                       stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
-                        <button class="comments-btn" onclick="next()">
+                        <button class="comments-btn" id="next">
                             <svg class="comments-btn-icon" width="10" height="18" viewBox="0 0 10 18" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1.25 1.5L8.75 9L1.25 16.5" stroke="#373C50" stroke-width="1.5"
