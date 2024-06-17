@@ -1141,7 +1141,7 @@ button {
 }
 
 .forum-content {
-    height: 0;
+    max-height: 0;
     overflow: hidden;
     transition: height .30s ease;
     font-size: 16px;
@@ -1154,7 +1154,7 @@ button {
 /*}*/
 
 .accordion-active {
-    height: 20px;
+    max-height: 200px;
 }
 
 .arrow-open {
