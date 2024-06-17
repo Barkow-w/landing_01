@@ -1143,7 +1143,7 @@ button {
 .forum-content {
     height: 0;
     overflow: hidden;
-    transition: height .15s ease;
+    transition: height .30s ease;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -1158,7 +1158,7 @@ button {
 }
 
 .arrow-open {
-    transition: .6s ease-in-out all;
+    transition: .15s ease-in-out all;
 }
 
 .arrow-active {
