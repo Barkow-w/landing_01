@@ -1,0 +1,33 @@
+:root {
+    --gray-900: #04091D;
+    --gray-800: #1D2236;
+    --gray-700: #373C50;
+    --gray-600: #505569;
+    --gray-500: #6A6F83;
+    --gray-400: #83889C;
+    --gray-300: #9DA2B6;
+    --gray-200: #B6BBCF;
+    --gray-100: #E9EBF0;
+    --gray-050: #F9F9F9;
+
+    --primary-900-color: #741027;
+    --primary-800-color: #8C1B2C;
+    --primary-700-color: #AE2A34;
+    --primary-600-color: #D03F3E;
+    --primary-500-color: #F26355;
+    --primary-400-color: #F7937E;
+    --primary-300-color: #FBB299;
+    --primary-200-color: #FDD1BB;
+    --primary-100-color: #FEEBDD;
+    --primary-050-color: #FFF5EE;
+
+    --hero-one-color: #FF9287;
+    --hero-two-color: #FFA8A0;
+
+    --gradient-color: linear-gradient(182.64deg, rgba(255, 231, 231, 0.64) -26.47%, #FFE7E7 56.61%, #FFFFFF 98.25%);
+
+    .auth-logo {
+        background-image: none;
+    }
+
+}

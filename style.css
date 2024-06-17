@@ -366,7 +366,7 @@ button {
     filter: blur(130px);
     background-color: var(--hero-two-color);
     z-index: -1;
-    
+
     @media (max-width: 1919px) {
         right: -452px;
     }
@@ -412,11 +412,11 @@ button {
 
 .hero-block {
     max-width: 763px;
-    
+
     @media (max-width: 1439px) {
         max-width: 580px;
     }
-    
+
     @media (max-width: 767px) {
 
     }
@@ -644,7 +644,7 @@ button {
     margin-right: 16px;
     border-radius: 50%;
     background-color: #aaabae;
-    
+
     @media (max-width: 1439px) {
         width: 48px;
         height: 48px;
@@ -728,7 +728,7 @@ button {
 
 .media-clone {
     display: none;
-    
+
     @media (max-width: 1023px) {
         display: flex;
     }
@@ -1116,12 +1116,13 @@ button {
     }
 }
 
-.forum-container {
+.forum-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
 }
+
 
 .forum-item-text {
     font-size: 18px;
@@ -1140,14 +1141,29 @@ button {
 }
 
 .forum-content {
-    display: none;
-    margin-top: 12px;
+    height: 0;
+    overflow: hidden;
+    transition: height .15s ease;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
 }
 
+/*.forum-content:not(.accordion-active) {*/
+/*    height: 0;*/
+/*}*/
 
+.accordion-active {
+    height: 20px;
+}
+
+.arrow-open {
+    transition: .15s ease-in-out all;
+}
+
+.arrow-active {
+    transform: rotate(180deg);
+}
 
 /*Footer*/
 

@@ -1,4 +1,3 @@
-
 const back = () => {
     let itemOne = document.getElementById('commentOne');
     let itemTwo = document.getElementById('commentTwo');
@@ -32,7 +31,7 @@ const next = () => {
 const updateSelection = () => {
     let active = document.querySelector('#comment-list > div.active')
 
-    if( active ) active.classList.remove('active');
+    if (active) active.classList.remove('active');
 
     items[index].classList.add('active');
 }
@@ -40,7 +39,7 @@ const updateSelection = () => {
 const pageSelection = () => {
     let active = document.querySelector('#comment-list > div.active')
 
-    if( active ) active.classList.remove('active');
+    if (active) active.classList.remove('active');
 
     items[index].classList.add('active');
 }
@@ -61,7 +60,7 @@ btn.next.addEventListener('click', function () {
     updateSelection();
 })
 
-btn.prev.addEventListener('click', function() {
+btn.prev.addEventListener('click', function () {
     index = (index + items.length - 1) % items.length;
     updateSelection();
 });
@@ -71,11 +70,10 @@ btn.nextList.addEventListener('click', function () {
     pageSelection();
 })
 
-btn.prevList.addEventListener('click', function() {
+btn.prevList.addEventListener('click', function () {
     index = (index + items.length - 1) % items.length;
     pageSelection();
 });
-
 
 
 const advantages = () => {
@@ -99,7 +97,6 @@ const forum = () => {
 }
 
 
-
 const play = () => {
     const video = document.getElementById('video');
     video.style.background = 'none'
@@ -107,95 +104,85 @@ const play = () => {
 
 
 const showOne = () => {
-    const forumOne = document.getElementById('one')
-    const downOne = document.getElementById('downOne')
-    const upOne = document.getElementById('upOne')
-    if (forumOne.style.display === 'none') {
-        forumOne.style.display = 'block'
-        downOne.style.display = 'none'
-        upOne.style.display = 'block'
+    const forum = document.getElementById('one')
+    const active = document.querySelector('.accordion-active')
+    const open = document.getElementById('arrowOne')
+    if (!active) {
+        forum.classList.add('accordion-active')
+        open.classList.add('arrow-active')
     } else {
-        forumOne.style.display = 'none'
-        downOne.style.display = 'block'
-        upOne.style.display = 'none'
+        forum.classList.remove('accordion-active')
+        open.classList.remove('arrow-active')
     }
 }
 
 
 const showTwo = () => {
-    const forumTwo = document.getElementById('two')
-    const downTwo = document.getElementById('downTwo')
-    const upTwo = document.getElementById('upTwo')
-    if (forumTwo.style.display === 'none') {
-        forumTwo.style.display = 'block'
-        downTwo.style.display = 'none'
-        upTwo.style.display = 'block'
+    const active = document.querySelector('.accordion-active')
+    const forum = document.getElementById('two')
+    const open = document.getElementById('arrowTwo')
+    if (!active) {
+        forum.classList.add('accordion-active')
+        open.classList.add('arrow-active')
     } else {
-        forumTwo.style.display = 'none'
-        downTwo.style.display = 'block'
-        upTwo.style.display = 'none'
+        forum.classList.remove('accordion-active')
+        open.classList.remove('arrow-active')
     }
 }
 
 const showThree = () => {
-    const forumThree = document.getElementById('three')
-    const downThree = document.getElementById('downThree')
-    const upThree = document.getElementById('upThree')
-    if (forumThree.style.display === 'none') {
-        forumThree.style.display = 'block'
-        downThree.style.display = 'none'
-        upThree.style.display = 'block'
+    const active = document.querySelector('.accordion-active')
+    const forum = document.getElementById('three')
+    const open = document.getElementById('arrowThree')
+    if (!active) {
+        forum.classList.add('accordion-active')
+        open.classList.add('arrow-active')
     } else {
-        forumThree.style.display = 'none'
-        downThree.style.display = 'block'
-        upThree.style.display = 'none'
+        forum.classList.remove('accordion-active')
+        open.classList.remove('arrow-active')
     }
 }
 
 const showFour = () => {
-    const forumFour = document.getElementById('four')
-    const downFour = document.getElementById('downFour')
-    const upFour = document.getElementById('upFour')
-    if (forumFour.style.display === 'none') {
-        forumFour.style.display = 'block'
-        downFour.style.display = 'none'
-        upFour.style.display = 'block'
+    const active = document.querySelector('.accordion-active')
+    const forum = document.getElementById('four')
+    const open = document.getElementById('arrowFour')
+    if (!active) {
+        forum.classList.add('accordion-active')
+        open.classList.add('arrow-active')
     } else {
-        forumFour.style.display = 'none'
-        downFour.style.display = 'block'
-        upFour.style.display = 'none'
+        forum.classList.remove('accordion-active')
+        open.classList.remove('arrow-active')
     }
 }
 
 const showFive = () => {
-    const forumFive = document.getElementById('five')
-    const downFive = document.getElementById('downFive')
-    const upFive = document.getElementById('upFive')
-    if (forumFive.style.display === 'none') {
-        forumFive.style.display = 'block'
-        downFive.style.display = 'none'
-        upFive.style.display = 'block'
+    const active = document.querySelector('.accordion-active')
+    const forum = document.getElementById('five')
+    const open = document.getElementById('arrowFive')
+    if (!active) {
+        forum.classList.add('accordion-active')
+        open.classList.add('arrow-active')
     } else {
-        forumFive.style.display = 'none'
-        downFive.style.display = 'block'
-        upFive.style.display = 'none'
+        forum.classList.remove('accordion-active')
+        open.classList.remove('arrow-active')
     }
 }
-
-const showSix = () => {
-    const forumSix = document.getElementById('six')
-    const downSix = document.getElementById('downSix')
-    const upSix = document.getElementById('upSix')
-    if (forumSix.style.display === 'none') {
-        forumSix.style.display = 'block'
-        downSix.style.display = 'none'
-        upSix.style.display = 'block'
-    } else {
-        forumSix.style.display = 'none'
-        downSix.style.display = 'block'
-        upSix.style.display = 'none'
-    }
-}
+//
+// const showSix = () => {
+//     const forumSix = document.getElementById('six')
+//     const downSix = document.getElementById('downSix')
+//     const upSix = document.getElementById('upSix')
+//     if (forumSix.style.display === 'none') {
+//         forumSix.style.display = 'block'
+//         downSix.style.display = 'none'
+//         upSix.style.display = 'block'
+//     } else {
+//         forumSix.style.display = 'none'
+//         downSix.style.display = 'block'
+//         upSix.style.display = 'none'
+//     }
+// }
 
 const showMenu = () => {
     const burgerMenu = document.getElementById('burgerMenu')
@@ -246,7 +233,7 @@ const pushForm = () => {
 
 }
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('#tel').inputmask("+7 (999) 999-99-99");
 });
 
