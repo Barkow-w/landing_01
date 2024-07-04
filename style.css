@@ -278,6 +278,133 @@ button {
     }
 }
 
+.hero-case-images {
+    display: none;
+    gap: 28px;
+    position: absolute;
+    width: 763px;
+    height: 100%;
+    top: 136px;
+    right: 300px;
+
+    @media (max-width: 1919px) {
+        width: 550px;
+        right: 208px;
+    }
+
+    @media (max-width: 1439px) {
+        right: 28px;
+    }
+}
+
+.hero-case-images-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 44px;
+    max-width: 417px;
+    width: 100%;
+}
+
+.position {
+    position: absolute;
+    max-width: fit-content;
+    padding: 4px 8px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    border-radius: 12px;
+    color: #FFFFFF;
+}
+
+
+.hero-case-images-kitchen {
+    position: relative;
+    max-width: 417px;
+    width: 100%;
+    max-height: 242px;
+    height: 100%;
+    background-image: url("./images/money-back/kitchen.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    @media (max-width: 1919px) {
+        max-width: 300px;
+        max-height: 172px;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.message-kitchen {
+    top: -16px;
+    right: -16px;
+    background-color: #22B0F3;
+
+    @media (max-width: 767px) {
+        top: -12px;
+        right: 12px;
+    }
+}
+
+.hero-case-images-furniture {
+    position: relative;
+    max-width: 321px;
+    width: 100%;
+    max-height: 242px;
+    height: 100%;
+    background-image: url("./images/money-back/furniture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (max-width: 1919px) {
+        max-width: 230px;
+        max-height: 171px;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.message-furniture {
+    top: -16px;
+    left: -16px;
+    background-color: #49CA35;
+}
+
+.hero-case-images-fridge {
+    position: relative;
+    max-width: 318px;
+    width: 100%;
+    max-height: 448px;
+    height: 100%;
+    margin-top: 40px;
+    background-image: url("./images/money-back/fridge.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (max-width: 1919px) {
+        max-width: 230px;
+        max-height: 322px;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.message-fridge {
+    bottom: -16px;
+    left: 16px;
+    background-color: #3028D2;
+}
+
 .hero-title {
 
     font-size: 60px;
@@ -312,6 +439,15 @@ button {
         margin-top: 16px;
         font-size: 18px;
         line-height: 24px;
+    }
+}
+
+.hero-btn {
+    max-width: 231px;
+    margin-top: 32px;
+
+    @media (max-width: 1439px) {
+        margin-top: 28px;
     }
 }
 
@@ -464,6 +600,13 @@ button {
     }
 }
 
+.image-list {
+    width: 100%;
+}
+
+.item {
+    border-radius: 12px;
+}
 /*Articles*/
 
 .articles-content {
@@ -512,17 +655,42 @@ button {
 
     @media (max-width: 767px) {
         width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
 .articles-image {
+    width: 274px;
+    height: 244px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     @media (max-width: 1439px) {
         width: 220px;
+        height: 198px;
     }
     @media (max-width: 1023px) {
         width: 176px;
+        height: 158px;
     }
 
+    @media (max-width: 767px) {
+        width: 128px;
+        height: 108px;
+        margin-bottom: 16px;
+    }
+}
+
+.mobile-image {
+    display: none;
+
+    @media (max-width: 767px) {
+        display: block;
+    }
+}
+
+.mobile-image-none {
     @media (max-width: 767px) {
         display: none;
     }
@@ -950,6 +1118,72 @@ button {
     }
 }
 
+.partner-info {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 56px;
+
+    @media (max-width: 1439px) {
+        align-items: flex-end;
+    }
+
+    @media (max-width: 1023px) {
+        align-items: center;
+    }
+
+    @media (max-width: 767px) {
+        justify-content: center;
+    }
+}
+
+.partner-list-money {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: my-counter;
+}
+
+li {
+    display: flex;
+}
+
+li::before {
+    content: counter(my-counter);
+    counter-increment: my-counter;
+    margin-right: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.partner-info-right {
+    width: 429px;
+    height: 334px;
+    background-image: url("./images/money-back/3d-illustration.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (max-width: 1439px) {
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 1023px) {
+        width: 245px;
+        height: 192px;
+    }
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
 .partner-item {
     display: flex;
     align-items: center;
@@ -1031,10 +1265,46 @@ button {
     }
 }
 
+.partner-list-video {
+    flex-direction: column;
+    gap: 148px;
+    margin-top: 148px;
+
+    @media (max-width: 1439px) {
+        margin-top: 120px;
+        gap: 120px;
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 88px;
+        gap: 88px;
+    }
+}
+
+.partner-list-video-item-text {
+    text-align: center;
+    max-width: 684px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: var(--gray-700);
+
+    @media (max-width: 1439px) {
+        padding-bottom: 24px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    @media (max-width: 767px) {
+        padding-bottom: 20px;
+    }
+}
+
 .partner-video {
     width: 906px;
     height: 510px;
-    margin-top: 64px;
     border-radius: 20px;
     background-color: var(--gray-100);
     background-image: url("./images/subtract.png");
@@ -1045,20 +1315,17 @@ button {
     @media (max-width: 1439px) {
         width: 836px;
         height: 470px;
-        margin-top: 56px;
         border-radius: 16px;
     }
 
     @media (max-width: 1023px) {
         width: 720px;
         height: 405px;
-        margin-top: 48px;
     }
 
     @media (max-width: 767px) {
         width: 100%;
         max-height: 166px;
-        margin-top: 32px;
         border-radius: 12px;
     }
 }
@@ -1143,7 +1410,7 @@ button {
 .forum-content {
     max-height: 0;
     overflow: hidden;
-    transition: height .30s ease;
+    transition: .15s ease-in-out all;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;

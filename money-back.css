@@ -33,6 +33,174 @@
     .auth-logo {
         background-image: url("./images/logo/money-back.png");
     }
+
+    .theme-uth-btn {
+        width: fit-content;
+        height: 28px;
+        padding: 0;
+        background-color: #FFFFFF;
+        color: var(--primary-500-color);
+    }
+
+    .hero-content {
+        padding-top: 136px;
+        background: #FFFFFF;
+        z-index: 1;
+
+        @media (max-width: 1919px) {
+            padding-top: 138px;
+        }
+
+        @media (max-width: 767px) {
+            padding-top: 24px;
+            display: flex;
+        }
+    }
+
+    .hero-container {
+        display: flex;
+        gap: 112px;
+        padding-top: 120px;
+
+        @media (max-width: 1919px) {
+            padding-top: 20px;
+        }
+
+        @media (max-width: 1439px) {
+            padding-top: 56px;
+        }
+
+        @media (max-width: 767px) {
+            padding-top: 0;
+            flex-direction: column;
+            gap: 52px;
+        }
+    }
+
+    .hero-orange {
+        display: none;
+    }
+
+    .hero-yellow {
+        display: none;
+    }
+
+    .hero-case {
+        display: none;
+    }
+
+    .hero-case-images {
+        display: flex;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    .hero-case-images-mobile {
+        display: none;
+        @media (max-width: 767px) {
+            display: flex;
+            height: 100%;
+        }
+    }
+
+    .hero-block {
+        max-width: 445px;
+        z-index: 10;
+    }
+
+    .hero-title {
+        font-size: 48px;
+        line-height: 60px;
+
+        @media (max-width: 1439px) {
+            font-size: 36px;
+            line-height: 44px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+
+    .hero-description {
+        display: none;
+    }
+
+    .discount {
+        background-image: url("./images/money-back/discount_isometric.png") !important;
+    }
+
+    .bonuses {
+        background-image: url("./images/money-back/cashback-concept.png") !important;
+    }
+
+    .accruals {
+        background-image: url("./images/money-back/discount_isometric1.png") !important;
+    }
+
+    .partner {
+        padding: 0;
+
+        @media (max-width: 767px) {
+            padding: 0 12px;
+        }
+    }
+
+    .partner-title {
+        width: 100%;
+    }
+
+    .partner-list {
+        display: none;
+    }
+
+    .partner-description {
+        max-width: 630px;
+        width: 100%;
+        margin: 0;
+
+        @media (max-width: 1919px) {
+            max-width: 482px;
+        }
+
+        @media (max-width: 1439px) {
+            max-width: 454px;
+        }
+
+        @media (max-width: 1023px) {
+            max-width: 400px;
+        }
+    }
+
+    .partner-bottom-btn {
+        margin-top: 32px;
+        max-width: 318px;
+
+        @media (max-width: 1439px) {
+            white-space: nowrap;
+            max-width: 232px;
+            font-weight: 500;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 100%;
+        }
+    }
+
+    .partner-list-video-item-text {
+        margin-top: 32px;
+
+        @media (max-width: 1439px) {
+            margin-top: 24px;
+        }
+
+        @media (max-width: 767px) {
+            margin-top: 20px;
+        }
+    }
 }
 
 

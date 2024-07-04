@@ -8,10 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="money-back.css">
     <link rel="shortcut icon" href="images/favicon/favicon-16x16.png">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
     <title>Единая платформа для рекомендации компании Кухни Беларуси</title>
 </head>
 <body>
@@ -22,8 +22,9 @@
             <div class="auth-container d-flex">
                 <div class="auth-logo"></div>
                 <div class="auth-buttons d-flex">
-                    <a class="auth-buttons-registration button" href="https://kb.moneyback.ru/" target="_blank">Зарегистрироваться</a>
-                    <a class="auth-buttons-comeIn button" href="https://kb.moneyback.ru/"
+                    <a class="auth-buttons-registration button theme-uth-btn" href="https://kb.moneyback.ru/"
+                       target="_blank">Зарегистрироваться</a>
+                    <a class="auth-buttons-comeIn button theme-uth-btn" href="https://kb.moneyback.ru/"
                        target="_blank">Войти</a>
                 </div>
                 <div class="auth-burger" onclick="showMenu()">
@@ -55,13 +56,61 @@
                 <div class="hero-yellow"></div>
                 <div class="container hero-container">
                     <div class="hero-block">
-                        <h1 class="hero-title">Партнерская программа Кухни Беларуси</h1>
+                        <h1 class="hero-title">Присоединяйтесь
+                            и зарабатывайте
+                            на рекомендациях
+                            с MoneyBack</h1>
                         <p class="hero-description">Рекомендуйте нашу продукцию и получайте до 5% от чека <span
                                 style="position: relative">
                          клиента
                         <img class="hero-vector" src="./images/Vector.png" alt="">
                     </span></p>
+                        <a class="hero-btn button" href="https://kb.moneyback.ru/">Присоединиться</a>
                     </div>
+                    <div class="hero-case-images" id="image-list">
+                        <div class="hero-case-images-block">
+                            <div class="hero-case-images-kitchen">
+                                <div class="message-kitchen position">
+                                    Кухни на заказ
+                                </div>
+                            </div>
+                            <div class="hero-case-images-furniture">
+                                <div class="message-furniture position">
+                                    Мебель для дома
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-case-images-fridge">
+                            <div class="message-fridge position">
+                                Бытовая техника
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="hero-case-images-mobile" id="catalog-list-1">
+                        <div class="image-list">
+                            <div class="scroll" style="height: 100%">
+                                <div class="hero-case-images-kitchen">
+                                    <div class="message-kitchen position">
+                                        Кухни на заказ
+                                    </div>
+                                </div>
+                                <div class="hero-case-images-furniture item-image">
+                                    <div class="message-furniture position">
+                                        Мебель для дома
+                                    </div>
+                                </div>
+                                <div class="hero-case-images-fridge item-image">
+                                    <div class="message-fridge position">
+                                        Бытовая техника
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
                 <img class="hero-case" src="./images/case.png" alt="">
             </div>
@@ -75,7 +124,8 @@
                     </h2>
                     <div class="articles-list d-flex">
                         <div class="articles-item reward d-flex">
-                            <img class="articles-image" src="./images/discount_isometric1.png" alt="image">
+                            <div class="articles-image discount"
+                                 style="background-image: url(./images/discount_isometric1.png)"></div>
                             <div class="articles-item-block">
                                 <div class="articles-block-title d-flex">
                                     Вознаграждение <span class="articles-span">до 5%</span> от чека
@@ -88,6 +138,8 @@
                         </div>
                         <div class="articles-item transfer d-flex">
                             <div class="articles-item-block">
+                                <div class="articles-image bonuses mobile-image"
+                                     style="background-image: url(./images/discount_isometric2.png)"></div>
                                 <div class="articles-block-title d-flex">
                                     Перечисление средств <span class="articles-span">еженедельно</span>
                                 </div>
@@ -99,10 +151,12 @@
                                     Периодичность выплат бонусов: еженедельно с минимальный суммой от 10 000 рублей.
                                 </p>
                             </div>
-                            <img class="articles-image" src="./images/discount_isometric2.png" alt="image">
+                            <div class="articles-image bonuses mobile-image-none"
+                                 style="background-image: url(./images/discount_isometric2.png)"></div>
                         </div>
                         <div class="articles-item statistics d-flex">
-                            <img class="articles-image" src="./images/discount_isometric3.png" alt="image">
+                            <div class="articles-image accruals"
+                                 style="background-image: url(./images/discount_isometric3.png)"></div>
                             <div class="articles-item-block">
                                 <div class="articles-block-title d-flex">
                                     Удобная и полная <span class="articles-span">статистика</span>
@@ -283,7 +337,7 @@
             <div class="container">
                 <div class="partner d-flex">
                     <h2 class="partner-title">
-                        Как это работает
+                        Как стать партнёром и начать зарабатывать?
                     </h2>
                     <div class="partner-list d-flex">
                         <div class="partner-item">
@@ -311,42 +365,90 @@
                             </p>
                         </div>
                     </div>
-                    <a class="partner-bottom-btn d-flex" href="https://kb.moneyback.ru/auth" target="_blank">Стать
-                        промоутером</a>
-
+                    <div class="partner-info d-flex">
+                        <div class="partner-info-left">
+                            <ol class="partner-list-money">
+                                <li>
+                                    <p class="partner-description">
+                                        Вы регистрируетесь в сервисе
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="partner-description">
+                                        Принимаете условия договор-оферты
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="partner-description">
+                                        Одним кликом генерируете ссылку на сайт (или создаете заявку в личном кабинете с
+                                        номером клиента)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="partner-description">
+                                        Делитесь ссылкой с клиентом
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="partner-description">
+                                        Клиент переходит на сайт, оставляет заявку или звонит нам
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="partner-description">
+                                        Автоматически регистрируем этого клиента за Вами, его заявку вы увидите в своем
+                                        личном кабинете
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="partner-description">
+                                        Если клиент заключает договор и вносит предоплату - вы получаете до 5% от суммы
+                                        чека
+                                        на Ваш счет
+                                    </p>
+                                </li>
+                            </ol>
+                            <a class="partner-bottom-btn d-flex" href="https://kb.moneyback.ru/auth" target="_blank">Стать
+                                промоутером</a>
+                        </div>
+                        <div class="partner-info-right"></div>
+                    </div>
                     <div class="partner-list-video d-flex">
                         <div class="partner-list-video-item">
-                            <div class="partner-list-video-item-text">
-                                Подключайтесь к партнёрской программе Кухни Беларуси сразу после регистрации!
-                            </div>
                             <video class="partner-video"
-                                   src="./video/testVideo.mp4"
+                                   src="./video/videoKitchen.mov"
                                    controls>
 
                                 <!--                    <img src="./images/subtract.png" alt="video">-->
                             </video>
+                            <div class="partner-list-video-item-text">
+                                Подключайтесь к партнёрским программам Кухни Беларуси, Купить Кухню, Haier, и других
+                                известных брендов сразу после регистрации!
+                            </div>
                         </div>
                         <div class="partner-list-video-item">
-                            <div class="partner-list-video-item-text">
-                                Кроме текстовых партнёрских ссылок, у нас есть баннеры и виджеты. Чтобы разместить их в блоге, не нужны навыки разработки.
-                            </div>
                             <video class="partner-video"
                                    src="./video/testVideo.mp4"
                                    controls>
 
                                 <!--                    <img src="./images/subtract.png" alt="video">-->
                             </video>
+                            <div class="partner-list-video-item-text">
+                                Кроме текстовых партнёрских ссылок, у нас есть баннеры и виджеты. Чтобы разместить их в
+                                блоге, не нужны навыки разработки.
+                            </div>
                         </div>
                         <div class="partner-list-video-item">
-                            <div class="partner-list-video-item-text">
-                                В статистике указываем количество кликов по ссылкам, виджетам и баннерам партнёрской программы.
-                            </div>
                             <video class="partner-video"
                                    src="./video/testVideo.mp4"
                                    controls>
 
                                 <!--                    <img src="./images/subtract.png" alt="video">-->
                             </video>
+                            <div class="partner-list-video-item-text">
+                                В статистике указываем количество кликов по ссылкам, виджетам и баннерам партнёрской
+                                программы.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -568,9 +670,9 @@
         </div>
     </footer>
     <script src="index.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
 </div>
-<script>
-
-</script>
 </body>
 </html>

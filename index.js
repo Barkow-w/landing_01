@@ -97,12 +97,6 @@ const forum = () => {
 }
 
 
-const play = () => {
-    const video = document.getElementById('video');
-    video.style.background = 'none'
-}
-
-
 const showOne = () => {
     const forum = document.getElementById('one')
     const active = document.querySelector('.accordion-active')
@@ -235,6 +229,17 @@ const pushForm = () => {
 
 $(document).ready(function () {
     $('#tel').inputmask("+7 (999) 999-99-99");
+});
+
+$(document).ready(function () {
+    $('.scroll').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        cssEase: 'linear'
+    });
+
 });
 
 
