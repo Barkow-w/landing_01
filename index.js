@@ -96,87 +96,82 @@ const forum = () => {
     section.scrollIntoView({behavior: 'smooth'})
 }
 
+document.querySelectorAll('.forum-header').forEach(item => {
+    item.addEventListener('click', event => {
+        const accordionItem = event.target.parentElement;
+        const accordionContent = accordionItem.querySelector('.forum-content')
+        const arrowActive = accordionItem.querySelector('.arrow-open')
+        arrowActive.classList.toggle('arrow-active')
+        accordionContent.classList.toggle('accordion-active');
+    });
+});
 
-const showOne = () => {
-    const forum = document.getElementById('one')
-    const active = document.querySelector('.accordion-active')
-    const open = document.getElementById('arrowOne')
-    if (!active) {
-        forum.classList.add('accordion-active')
-        open.classList.add('arrow-active')
-    } else {
-        forum.classList.remove('accordion-active')
-        open.classList.remove('arrow-active')
-    }
-}
-
-
-const showTwo = () => {
-    const active = document.querySelector('.accordion-active')
-    const forum = document.getElementById('two')
-    const open = document.getElementById('arrowTwo')
-    if (!active) {
-        forum.classList.add('accordion-active')
-        open.classList.add('arrow-active')
-    } else {
-        forum.classList.remove('accordion-active')
-        open.classList.remove('arrow-active')
-    }
-}
-
-const showThree = () => {
-    const active = document.querySelector('.accordion-active')
-    const forum = document.getElementById('three')
-    const open = document.getElementById('arrowThree')
-    if (!active) {
-        forum.classList.add('accordion-active')
-        open.classList.add('arrow-active')
-    } else {
-        forum.classList.remove('accordion-active')
-        open.classList.remove('arrow-active')
-    }
-}
-
-const showFour = () => {
-    const active = document.querySelector('.accordion-active')
-    const forum = document.getElementById('four')
-    const open = document.getElementById('arrowFour')
-    if (!active) {
-        forum.classList.add('accordion-active')
-        open.classList.add('arrow-active')
-    } else {
-        forum.classList.remove('accordion-active')
-        open.classList.remove('arrow-active')
-    }
-}
-
-const showFive = () => {
-    const active = document.querySelector('.accordion-active')
-    const forum = document.getElementById('five')
-    const open = document.getElementById('arrowFive')
-    if (!active) {
-        forum.classList.add('accordion-active')
-        open.classList.add('arrow-active')
-    } else {
-        forum.classList.remove('accordion-active')
-        open.classList.remove('arrow-active')
-    }
-}
-//
-// const showSix = () => {
-//     const forumSix = document.getElementById('six')
-//     const downSix = document.getElementById('downSix')
-//     const upSix = document.getElementById('upSix')
-//     if (forumSix.style.display === 'none') {
-//         forumSix.style.display = 'block'
-//         downSix.style.display = 'none'
-//         upSix.style.display = 'block'
+// const showOne = () => {
+//     const active = document.querySelector('.accordion-active')
+//     const forum = document.getElementById('one')
+//     const open = document.getElementById('arrowOne')
+//     if (forum.style.maxHeight === 200) {
+//         forum.classList.add('accordion-active')
+//         open.classList.add('arrow-active')
 //     } else {
-//         forumSix.style.display = 'none'
-//         downSix.style.display = 'block'
-//         upSix.style.display = 'none'
+//         forum.classList.remove('accordion-active')
+//         open.classList.remove('arrow-active')
 //     }
 // }
+//
+//
+// const showTwo = () => {
+//     const active = document.querySelector('.accordion-active')
+//     const forum = document.getElementById('two')
+//     const open = document.getElementById('arrowTwo')
+//     if (!active) {
+//         forum.classList.add('accordion-active')
+//         open.classList.add('arrow-active')
+//     } else {
+//         forum.classList.remove('accordion-active')
+//         open.classList.remove('arrow-active')
+//     }
+// }
+//
+// const showThree = () => {
+//     const active = document.querySelector('.accordion-active')
+//     const forum = document.getElementById('three')
+//     const open = document.getElementById('arrowThree')
+//     if (!active) {
+//         forum.classList.add('accordion-active')
+//         open.classList.add('arrow-active')
+//     } else {
+//         forum.classList.remove('accordion-active')
+//         open.classList.remove('arrow-active')
+//     }
+// }
+//
+// const showFour = () => {
+//     const active = document.querySelector('.accordion-active')
+//     const forum = document.getElementById('four')
+//     const open = document.getElementById('arrowFour')
+//     if (!active) {
+//         forum.classList.add('accordion-active')
+//         open.classList.add('arrow-active')
+//     } else {
+//         forum.classList.remove('accordion-active')
+//         open.classList.remove('arrow-active')
+//     }
+// }
+//
+// const showFive = () => {
+//     const active = document.querySelector('.accordion-active')
+//     const forum = document.getElementById('five')
+//     const open = document.getElementById('arrowFive')
+//     if (!active) {
+//         forum.classList.add('accordion-active')
+//         open.classList.add('arrow-active')
+//     } else {
+//         forum.classList.remove('accordion-active')
+//         open.classList.remove('arrow-active')
+//     }
+// }
+
 
 const showMenu = () => {
     const burgerMenu = document.getElementById('burgerMenu')
@@ -227,19 +222,24 @@ const pushForm = () => {
 
 }
 
-$(document).ready(function () {
-    $('#tel').inputmask("+7 (999) 999-99-99");
-});
+const phoneMask = document.getElementById('tel');
+Inputmask({ mask: '+7 (999) 999-99-99', showMaskOnHover: false}).mask(phoneMask);
 
 $(document).ready(function () {
-    $('.scroll').slick({
+    $('#image-list .image-list').slick({
         dots: true,
         arrows: false,
         infinite: true,
         speed: 500,
         cssEase: 'linear'
     });
-
+    $('#catalog-list-1 .image-list').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        cssEase: 'linear'
+    });
 });
 
 

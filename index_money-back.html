@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="money-back.css">
     <link rel="shortcut icon" href="images/favicon/favicon-16x16.png">
-    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <title>Единая платформа для рекомендации компании Кухни Беларуси</title>
 </head>
 <body>
@@ -67,44 +69,65 @@
                     </span></p>
                         <a class="hero-btn button" href="https://kb.moneyback.ru/">Присоединиться</a>
                     </div>
-                    <div class="hero-case-images" id="image-list">
-                        <div class="hero-case-images-block">
-                            <div class="hero-case-images-kitchen">
-                                <div class="message-kitchen position">
-                                    Кухни на заказ
-                                </div>
-                            </div>
-                            <div class="hero-case-images-furniture">
-                                <div class="message-furniture position">
-                                    Мебель для дома
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hero-case-images-fridge">
-                            <div class="message-fridge position">
-                                Бытовая техника
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="hero-case-images-mobile" id="catalog-list-1">
-                        <div class="image-list">
-                            <div class="scroll" style="height: 100%">
+                    <div class="hero-case-images">
+                            <div class="hero-case-images-block">
                                 <div class="hero-case-images-kitchen">
                                     <div class="message-kitchen position">
                                         Кухни на заказ
                                     </div>
                                 </div>
-                                <div class="hero-case-images-furniture item-image">
+                                <div class="hero-case-images-furniture furniture-margin">
                                     <div class="message-furniture position">
                                         Мебель для дома
                                     </div>
                                 </div>
-                                <div class="hero-case-images-fridge item-image">
+                            </div>
+                            <div class="hero-case-images-fridge">
+                                <div class="message-fridge position">
+                                    Бытовая техника
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="hero-case-images-media" id="image-list">
+                        <div class="image-list">
+                            <div class="hero-case-images-block">
+                                <div class="hero-case-images-kitchen">
+                                    <div class="message-kitchen position">
+                                        Кухни на заказ
+                                    </div>
+                                </div>
+                                <div class="hero-case-images-furniture furniture-margin">
+                                    <div class="message-furniture position">
+                                        Мебель для дома
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hero-case-images-block">
+                                <div class="hero-case-images-fridge">
                                     <div class="message-fridge position">
                                         Бытовая техника
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-case-images-mobile" id="catalog-list-1">
+                        <div class="image-list">
+                            <div class="hero-case-images-kitchen item-image">
+                                <div class="message-kitchen position">
+                                    Кухни на заказ
+                                </div>
+                            </div>
+                            <div class="hero-case-images-furniture item-image">
+                                <div class="message-furniture position">
+                                    Мебель для дома
+                                </div>
+                            </div>
+                            <div class="hero-case-images-fridge item-image">
+                                <div class="message-fridge-position position">
+                                    Бытовая техника
                                 </div>
                             </div>
                         </div>
@@ -219,8 +242,7 @@
 
                         <div class="comments-item active" id="commentOne">
                             <div class="comments-avatar d-flex">
-                                <div class="comments-bg"></div>
-                                <!--                                    <img class="comments-icon" src="./images/avatar1.png" alt="avatar">-->
+                                <div class="comments-icon" style="background-image: url(./images/avatar1.png)"></div>
                                 <div class="comments-avatar-info">
                                     <div class="comments-avatar-name">Веб-мастер</div>
                                     <div class="comments-avatar-text">Сотрудничает около 6 месяцев</div>
@@ -240,8 +262,7 @@
 
                         <div class="comments-item" id="commentTwo">
                             <div class="comments-avatar d-flex">
-                                <div class="comments-bg"></div>
-                                <!--                                    <img class="comments-icon" src="./images/avatar2.png" alt="avatar">-->
+                                <div class="comments-icon" style="background-image: url(./images/avatar2.png)"></div>
                                 <div class="comments-avatar-info">
                                     <div class="comments-avatar-name">Дизайнер интерьеров</div>
                                     <div class="comments-avatar-text">Сотрудничает около 6 месяцев</div>
@@ -267,8 +288,7 @@
                         <!--                        <div class="comments-list-page" style="display: none" id="pageTwo">-->
                         <div class="comments-item media" style="display: none" id="commentThree">
                             <div class="comments-avatar d-flex">
-                                <div class="comments-bg"></div>
-                                <!--                                    <img class="comments-icon" src="./images/avatar1.png" alt="avatar">-->
+                                <div class="comments-icon" style="background-image: url(./images/avatar3.png)"></div>
                                 <div class="comments-avatar-info">
                                     <div class="comments-avatar-name">Бригадир ремонтной компании</div>
                                     <div class="comments-avatar-text">Сотрудничает около 6 месяцев</div>
@@ -292,8 +312,7 @@
                         </div>
                         <div class="comments-item media" style="display: none" id="commentFour">
                             <div class="comments-avatar d-flex">
-                                <div class="comments-bg"></div>
-                                <!--                                    <img class="comments-icon" src="./images/avatar2.png" alt="avatar">-->
+                                <div class="comments-icon" style="background-image: url(./images/avatar4.png)"></div>
                                 <div class="comments-avatar-info">
                                     <div class="comments-avatar-name">Инфлюенсер</div>
                                     <div class="comments-avatar-text">Сотрудничает около 3 месяцев</div>
@@ -416,8 +435,8 @@
                     <div class="partner-list-video d-flex">
                         <div class="partner-list-video-item">
                             <video class="partner-video"
-                                   src="./video/videoKitchen.mov"
-                                   controls>
+                                   src="./video/test12.mp4"
+                                   controls autoplay>
 
                                 <!--                    <img src="./images/subtract.png" alt="video">-->
                             </video>
@@ -438,18 +457,18 @@
 <!--                                блоге, не нужны навыки разработки.-->
 <!--                            </div>-->
 <!--                        </div>-->
-<!--                        <div class="partner-list-video-item">-->
-<!--                            <video class="partner-video"-->
-<!--                                   src="./video/testVideo.mp4"-->
-<!--                                   controls>-->
+                        <div class="partner-list-video-item">
+                            <video class="partner-video"
+                                   src="./video/testVideo12.mp4"
+                                   controls autoplay>
 
-<!--                                &lt;!&ndash;                    <img src="./images/subtract.png" alt="video">&ndash;&gt;-->
-<!--                            </video>-->
-<!--                            <div class="partner-list-video-item-text">-->
-<!--                                В статистике указываем количество кликов по ссылкам, виджетам и баннерам партнёрской-->
-<!--                                программы.-->
-<!--                            </div>-->
-<!--                        </div>-->
+                                <!--                    <img src="./images/subtract.png" alt="video">-->
+                            </video>
+                            <div class="partner-list-video-item-text">
+                                В статистике указываем количество кликов по ссылкам, виджетам и баннерам партнёрской
+                                программы.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -464,7 +483,7 @@
                         </h2>
                         <div class="forum-list d-flex">
                             <div class="forum-item">
-                                <div class="forum-header" onclick="showOne()">
+                                <div class="forum-header">
                                     <div class="forum-item-text">
                                         Сколько процентов комиссии получает промоутер за разные категории товаров?
                                     </div>
@@ -477,13 +496,13 @@
 
                                     </div>
                                 </div>
-                                <div class="forum-content" id="one">
+                                <div class="forum-content">
                                     Промоутер получает 3% от стоимости заказа, а если в заказе есть кухонный гарнитур -
                                     5%
                                 </div>
                             </div>
                             <div class="forum-item">
-                                <div class="forum-header" onclick="showTwo()">
+                                <div class="forum-header">
                                     <div class="forum-item-text">
                                         Что потребуются для подключения к программе?
                                     </div>
@@ -496,13 +515,13 @@
 
                                     </div>
                                 </div>
-                                <div class="forum-content" id="two">
+                                <div class="forum-content">
                                     Для подключения понадобится мобильный телефон с номером Российской Федерации с
                                     возможностью приема СМС,
                                     а также быть зарегистрированным как самозанятый или ИП
                                 </div>
                             </div>
-                            <div class="forum-item" onclick="showThree()">
+                            <div class="forum-item">
                                 <div class="forum-header">
                                     <div class="forum-item-text">
                                         Сколько времени занимает рассмотрение заявки на подключение?
@@ -516,12 +535,12 @@
 
                                     </div>
                                 </div>
-                                <div class="forum-content" id="three">
+                                <div class="forum-content">
                                     Рассмотрение заявки происходит моментально, поделиться своей реферальной ссылкой
                                     можно сразу после регистрации
                                 </div>
                             </div>
-                            <div class="forum-item" onclick="showFour()">
+                            <div class="forum-item">
                                 <div class="forum-header">
                                     <div class="forum-item-text">
                                         Какими способами перечисляются средства на счет промоутера?
@@ -535,11 +554,11 @@
 
                                     </div>
                                 </div>
-                                <div class="forum-content" id="four">
+                                <div class="forum-content">
                                     На банковскую карту самозанятого или расчетный счет индивидуального предпринимателя
                                 </div>
                             </div>
-                            <div class="forum-item" onclick="showFive()">
+                            <div class="forum-item">
                                 <div class="forum-header">
                                     <div class="forum-item-text">
                                         Какие инструменты может использовать промоутер для привлечения клиентов?
@@ -553,7 +572,7 @@
 
                                     </div>
                                 </div>
-                                <div class="forum-content" id="five">
+                                <div class="forum-content">
                                     Промоутер может использовать реферальную ссылку или QR-код, который он может
                                     разместить на любой веб-портал,
                                     не входящий в реестр запрещенных законом Российской Федерации
@@ -639,7 +658,7 @@
                     </div>
                     <div class="footer-bottom d-flex">
                         <div class="footer-company">
-                            2024 © Кухни Беларуси
+                            2024 © MoneyBack
                         </div>
                         <div class="footer-navigation d-flex">
                             <a class="footer-link" onclick="advantages()">Преимущества</a>
@@ -669,10 +688,11 @@
             </div>
         </div>
     </footer>
-    <script src="index.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
 </div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/inputmask"></script>
+<script src="index.js"></script>
 </body>
 </html>
