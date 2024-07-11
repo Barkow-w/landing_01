@@ -30,4 +30,8 @@
         background-image: url("./images/logo/puy-kitchen.png");
     }
 
+    .hero-title {
+        max-width: 763px;
+    }
+
 }

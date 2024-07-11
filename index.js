@@ -96,83 +96,16 @@ const forum = () => {
     section.scrollIntoView({behavior: 'smooth'})
 }
 
-document.querySelectorAll('.forum-header').forEach(item => {
-    item.addEventListener('click', event => {
-        const accordionItem = event.target.parentElement;
-        const accordionContent = accordionItem.querySelector('.forum-content')
-        const arrowActive = accordionItem.querySelector('.arrow-open')
-        arrowActive.classList.toggle('arrow-active')
+document.querySelectorAll('.forum-item').forEach(item => {
+    const accordionHeader = item.querySelector('.forum-header')
+    const accordionContent = item.querySelector('.forum-content');
+    const arrowActive = item.querySelector('.arrow-open');
+
+    accordionHeader.addEventListener('click', () => {
         accordionContent.classList.toggle('accordion-active');
-    });
-});
-
-// const showOne = () => {
-//     const active = document.querySelector('.accordion-active')
-//     const forum = document.getElementById('one')
-//     const open = document.getElementById('arrowOne')
-//     if (forum.style.maxHeight === 200) {
-//         forum.classList.add('accordion-active')
-//         open.classList.add('arrow-active')
-//     } else {
-//         forum.classList.remove('accordion-active')
-//         open.classList.remove('arrow-active')
-//     }
-// }
-//
-//
-// const showTwo = () => {
-//     const active = document.querySelector('.accordion-active')
-//     const forum = document.getElementById('two')
-//     const open = document.getElementById('arrowTwo')
-//     if (!active) {
-//         forum.classList.add('accordion-active')
-//         open.classList.add('arrow-active')
-//     } else {
-//         forum.classList.remove('accordion-active')
-//         open.classList.remove('arrow-active')
-//     }
-// }
-//
-// const showThree = () => {
-//     const active = document.querySelector('.accordion-active')
-//     const forum = document.getElementById('three')
-//     const open = document.getElementById('arrowThree')
-//     if (!active) {
-//         forum.classList.add('accordion-active')
-//         open.classList.add('arrow-active')
-//     } else {
-//         forum.classList.remove('accordion-active')
-//         open.classList.remove('arrow-active')
-//     }
-// }
-//
-// const showFour = () => {
-//     const active = document.querySelector('.accordion-active')
-//     const forum = document.getElementById('four')
-//     const open = document.getElementById('arrowFour')
-//     if (!active) {
-//         forum.classList.add('accordion-active')
-//         open.classList.add('arrow-active')
-//     } else {
-//         forum.classList.remove('accordion-active')
-//         open.classList.remove('arrow-active')
-//     }
-// }
-//
-// const showFive = () => {
-//     const active = document.querySelector('.accordion-active')
-//     const forum = document.getElementById('five')
-//     const open = document.getElementById('arrowFive')
-//     if (!active) {
-//         forum.classList.add('accordion-active')
-//         open.classList.add('arrow-active')
-//     } else {
-//         forum.classList.remove('accordion-active')
-//         open.classList.remove('arrow-active')
-//     }
-// }
-
-
+        arrowActive.classList.toggle('arrow-active');
+    })
+})
 const showMenu = () => {
     const burgerMenu = document.getElementById('burgerMenu')
     const close = document.getElementById('close')
