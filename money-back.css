@@ -252,7 +252,7 @@
         display: flex;
     }
 
-    li::before {
+    ol > li::before {
         content: counter(my-counter) !important;
         counter-increment: my-counter;
         margin-right: 12px;
