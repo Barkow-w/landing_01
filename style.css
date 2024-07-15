@@ -1269,24 +1269,6 @@ li:before {
     margin: 0;
 }
 
-ol {
-    list-style-type: none;
-    counter-reset: my-counter;
-}
-
-li {
-    display: flex;
-}
-
-li::before {
-    content: counter(my-counter);
-    counter-increment: my-counter;
-    margin-right: 12px;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 700;
-}
-
 .partner-info-right {
     width: 429px;
     height: 334px;
