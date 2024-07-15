@@ -15,6 +15,29 @@
     <link rel="stylesheet" type="text/css"
           href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <title>Присоединяйтесь и зарабатывайте на рекомендациях с MoneyBack</title>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask"></script>
+    <script>
+        $(document).ready(function () {
+            $('#image-list .image-list').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 500,
+                cssEase: 'linear'
+            });
+            $('#catalog-list-1 .image-list').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 500,
+                cssEase: 'linear'
+            });
+        });
+    </script>
 </head>
 <body>
 
@@ -691,10 +714,6 @@
         </div>
     </footer>
 </div>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/inputmask"></script>
 <script src="index.js"></script>
 </body>
 </html>
