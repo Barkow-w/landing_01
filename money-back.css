@@ -43,6 +43,8 @@
     }
 
     .hero-content {
+        max-width: 1920px;
+        margin: 0 auto;
         height: 800px;
         padding-top: 136px;
         background: #FFFFFF;
