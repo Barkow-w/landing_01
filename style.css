@@ -672,7 +672,7 @@ button {
 
 .slick-dots {
     right: 190px !important;
-    bottom: -40px !important;
+    bottom: -64px !important;
     @media (max-width: 767px) {
         position: static !important;
     }
