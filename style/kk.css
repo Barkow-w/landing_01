@@ -27,7 +27,7 @@
     --gradient-color: linear-gradient(182.64deg, rgba(255, 231, 231, 0.64) -26.47%, #FFE7E7 56.61%, #FFFFFF 98.25%);
 
     .auth-logo {
-        background-image: url("./images/logo/puy-kitchen.png");
+        background-image: url("../images/logo/puy-kitchen.png");
     }
 
     .hero-title {

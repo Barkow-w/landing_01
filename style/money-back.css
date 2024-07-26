@@ -26,12 +26,29 @@
 
     --gradient-color: linear-gradient(182.64deg, rgba(241, 248, 253, 0.64) -26.47%, #F1F8FD 56.61%, #FFFFFF 98.25%);
 
+
+
     .footer-bg {
         background-color: var(--primary-900-color);
     }
 
     .auth-logo {
-        background-image: url("./images/logo/money-back.png");
+        background-image: url("../images/logo/money-back.png");
+    }
+
+    .burger-menu {
+        gap: 20px;
+        padding: 16px 12px;
+    }
+
+    .burger-menu-btn {
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+        background-color: #FFFFFF;
+        color: var(--primary-500-color);
     }
 
     .theme-uth-btn {
@@ -142,24 +159,36 @@
         z-index: 10;
 
         @media (max-width: 1023px) {
-            max-width: 335px;
+            min-width: 352px;
         }
 
         @media (max-width: 767px) {
+            min-width: 296px;
             padding-top: 24px;
         }
     }
 
     .hero-title {
+        max-width: 445px;
         font-size: 48px;
         line-height: 60px;
 
+        @media (max-width: 1919px) {
+            max-width: 433px;
+        }
+
         @media (max-width: 1439px) {
+            max-width: 328px;
             font-size: 36px;
             line-height: 44px;
         }
 
+        @media (max-width: 1023px) {
+            max-width: 352px;
+        }
+
         @media (max-width: 767px) {
+            max-width: 217px;
             font-size: 24px;
             line-height: 32px;
         }
@@ -170,15 +199,15 @@
     }
 
     .discount {
-        background-image: url("./images/money-back/discount_isometric.png") !important;
+        background-image: url("../images/money-back/discount_isometric.png") !important;
     }
 
     .bonuses {
-        background-image: url("./images/money-back/cashback-concept.png") !important;
+        background-image: url("../images/money-back/cashback-concept.png") !important;
     }
 
     .accruals {
-        background-image: url("./images/money-back/discount_isometric1.png") !important;
+        background-image: url("../images/money-back/discount_isometric1.png") !important;
     }
 
     .partner {
@@ -219,11 +248,17 @@
     .partner-bottom-btn {
         margin-top: 32px;
         max-width: 318px;
+        border-radius: 10px;
 
         @media (max-width: 1439px) {
             white-space: nowrap;
             max-width: 232px;
             font-weight: 500;
+            border-radius: 8px;
+        }
+        
+        @media (max-width: 1023px) {
+            border-radius: 6px;
         }
 
         @media (max-width: 767px) {
@@ -250,6 +285,12 @@
 
     li {
         display: flex;
+
+        @media (max-width: 1439px) {
+            height: fit-content;
+            font-size: 14px;
+            line-height: 20px;
+        }
     }
 
     ol > li::before {
@@ -257,8 +298,9 @@
         counter-increment: my-counter;
         margin-right: 12px;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 15px;
         font-weight: 700;
+
     }
 }
 

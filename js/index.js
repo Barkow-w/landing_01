@@ -122,12 +122,22 @@ const showMenu = () => {
 }
 
 const pushForm = () => {
-    let nameField = document.getElementById('name');
-    let telField = document.getElementById('tel');
-    let mainModal = document.getElementById('modal')
-    let noneScroll = document.body
+    const nameField = document.getElementById('name');
+    const telField = document.getElementById('tel');
+    const mainModal = document.getElementById('modal')
+    const noneScroll = document.body
+    const validPhone = /^\+7\((9[0-9]{2})\)\s?([0-9]{3})-?([0-9]{2})-?([0-9]{2})$/;
 
-    if (nameField.value && telField.value) {
+
+    const isValid = validPhone.test(telField.value)
+
+    if (!isValid) {
+        console.log(isValid, 'NO')
+    } else {
+        console.log(isValid, "YES")
+    }
+
+    if (nameField.value && telField.value && isValid) {
         mainModal.style.display = 'block'
         noneScroll.style.overflowY = 'hidden'
     } else {
@@ -135,7 +145,7 @@ const pushForm = () => {
         noneScroll.style.overflowY = 'scroll'
     }
 
-    if (nameField.value && telField.value) {
+    if (nameField.value && telField.value && isValid) {
         console.log(nameField.value, telField.value)
 
         nameField.value = ''
@@ -144,15 +154,16 @@ const pushForm = () => {
         telField.style.borderColor = null;
     } else {
         if (!nameField.value) {
+            nameField.style.borderColor = "red";
         } else {
             nameField.style.borderColor = null;
         }
-        if (!telField.value) {
+        if (!isValid && !telField.value ) {
+            telField.style.borderColor = "red";
         } else {
             telField.style.borderColor = null;
         }
     }
-
 }
 
 $(document).ready(function () {
@@ -172,12 +183,8 @@ $(document).ready(function () {
     });
 });
 
-const phoneMask = document.getElementById('tel');
-Inputmask({ mask: '+7 (999) 999-99-99', showMaskOnHover: false}).mask(phoneMask);
-
-
-
-
-
+$(document).ready(function(){
+    $("#tel").inputmask("+7(999)999-99-99");
+});
 
 
