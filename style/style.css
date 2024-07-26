@@ -130,15 +130,15 @@ button {
 .auth-container {
     justify-content: space-between;
     align-items: center;
-    padding: 29px 24px 29px 28px;
+    padding: 26px 24px 26px 28px;
     max-width: 100%;
 
     @media (max-width: 1439px) {
-        padding: 19px 24px 19px 28px;
+        padding: 18px 24px 18px 28px;
     }
 
     @media (max-width: 1023px) {
-        padding: 20px 24px;
+        padding: 18px 24px;
     }
 
     @media (max-width: 767px) {
@@ -160,14 +160,6 @@ button {
     }
 }
 
-.burger-menu-btn {
-    width: 100%;
-    height: fit-content;
-    margin: 0 auto;
-    padding: 0;
-    background-color: #FFFFFF;
-    color: var(--primary-500-color);
-}
 
 .path {
     stroke: var(--primary-500-color);
@@ -947,8 +939,8 @@ button {
     }
 
     @media (max-width: 767px) {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 20px;
+        line-height: 24px;
     }
 }
 
@@ -1812,6 +1804,8 @@ button {
     width: 318px;
     height: 48px;
     padding: 12px;
+    font-size: 16px;
+    line-height: 24px;
     box-sizing: border-box;
     border-radius: 8px;
     border: 1px solid var(--gray-200);
@@ -1824,6 +1818,8 @@ button {
         width: 248px;
         height: 40px;
         padding: 10px 12px;
+        font-size: 14px;
+        line-height: 20px;
     }
 
     @media (max-width: 767px) {
@@ -1908,6 +1904,8 @@ button {
     background-color: #FFFFFF;
     color: var(--gray-900);
 }
+
+
 
 input {
     touch-action: manipulation;
